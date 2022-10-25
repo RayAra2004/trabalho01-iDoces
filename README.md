@@ -8,7 +8,7 @@ Integrantes do grupo<br>
 Carlos Eduardo de Souza Barbosa: cesbarbosa2005@gmail.com<br>
 Esther Moraes Nascimento: esthermoraesnascimento@gmail.com<br>
 Raynan Araujo da Silva: raynan.araujo.ifes@gmail.com<br>
-Sofia Andrades Nascimento: andradesoso10@gmail.com<br>
+Sofia Andrade Nascimento: andradesoso10@gmail.com<br>
 <br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
