@@ -1,13 +1,15 @@
-# TRABALHO 01:  Título do Trabalho
+# TRABALHO 01:  iDoces
 Trabalho desenvolvido durante a disciplina de Banco de dados
 
 # Sumário
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
-...<br>
+Carlos Eduardo de Souza Barbosa: cesbarbosa2005@gmail.com<br>
+Esther Moraes Nascimento: esthermoraesnascimento@gmail.com<br>
+Raynan Araujo da Silva: raynan.araujo.ifes@gmail.com<br>
+Sofia Andrades Nascimento: andradesoso10@gmail.com<br>
+<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
