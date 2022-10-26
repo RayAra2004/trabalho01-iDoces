@@ -15,18 +15,14 @@ Sofia Andrade Nascimento: andradesoso10@gmail.com<br>
 Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
 <br>e motivação da escolha realizada. <br>
 
-> A empresa "Devcom Projetos" visa colaborar com desenvolvimento de projetos para uma sociedade melhor. Sabendo-se dos desafios para gerenciar projetos dentro de uma empresa e visando unir as informações relativas a funcionários, departamentos e projetos em um mesmo local, ficamos motivados com o desenvolvimento deste sistema. O Sistema "Devcom" tem como objetivo gerenciar todas as informações ao desenvolvimento das atividades de projetos em diversas localidades do país. Para realizar suas operações adequadamente e empresa necessita que sistema que armazene informações relativas aos Projetos, Departamentos e Empregados, além de também armazenar dados sobre  Dependentes e Históricos de Salário dos empregados. O sistema deverá gerar um conjunto de relatórios que por sua vez atenderá os anseios da empresa em questão.
+Nossa história no ramo da doceria começou em 2006, adquirimos um food truck que intitulamos de  “iDoces”, ficamos muito conhecidos pela população da comunidade e o jornal local como os melhores doces da comunidade e com isso nossa fama foi aumentando mais e mais e consequentemente o número de clientes também, por isso nós contratamos a empresa CarnanTech, para que possamos dar conta de todos os pedidos com excelência pedimos que eles criassem uma aplicação para solucionar nosso problema. 
  
 
 ### 3.MINI-MUNDO<br>
 
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar) <br>
-Entrevista com o usuário e identificação dos requisitos.(quando for o caso de sistemas com cliente  real)<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
-
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes. 
+Neste sistema temos as pessoas (podendo ser cliente ou entregador), onde iremos armazenar seu código, nome, forma de contato(celular, email), cpf e endereço(que contém CEP, logradouro, complemento, número, bairro, cidade, UF). O cliente e o entregador são uma pessoa,  possuindo código. O cliente realiza uma ou várias compras e uma compra é realizada por um ou vários clientes, que ao ser realizada armazena  um código. Esta compra refere-se a um produto, armazenando a quantidade de produtos e a data e hora que foi realizada. Sendo que uma compra possui um ou vários produtos, que têm código, nome, descrição, valor e tipo de produto e um produto é referente a várias compras. A compra também possui um meio de pagamento, que contém código, valor, tipo de pagamento, sendo que uma compra tem uma ou várias formas de pagamento e um meio de pagamento é de apenas uma compra.
+Por fim, temos o entregador realizando a entrega de várias compras e uma compra é entregue por um e apenas um entregador.
+ 
 
 ### 4.PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
