@@ -45,27 +45,27 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
     [Grupo01]: [Raynan Araujo da Silva]
 
 #### 5.2 Descrição dos dados 
-         PESSOA: Tabela que armazena as informações relativas as pessoas. <br>
-           codigo: campo que armazena um código único relativo a cada pessoa. <br>
-           nome: campo referente ao nome da pessoa. <br>
-           forma_contato: campo multivalorado e composto que tem as formas de contato: <br>
-             celular: campo que armazena o número da pessoa. <br>
-             email: campo que armazena o email da pessoa. <br>
-           endereco: campo que armazena o endereço de uma pessoa: <br>
-             CEP:campo que armazana o CEP relativo ao endereço. <br>
-             logradouro:campo que armazana o logradouro relativo ao endereço. <br>
-             numero:campo que armazana o numero relativo ao endereço.<br>
-             bairro:campo que armazana o bairro relativo ao endereço. <br>
-             cidade:campo que armazana o cidade relativo ao endereço. <br>
-             tipo_logradouro:campo que armazana o tipo_logradouro relativo ao endereço. <br>
-             complemento:campo que armazana o complemento relativo ao endereço. <br>
-             UF:campo que armazana o UF relativo ao endereço. <br>
-         CLIENTE: Tabela que armazena informações referente ao cliente: <br>
-           codigo: campo que armazena um código único relativo a cada pessoa. <br>
-         ENTREGADOR: Tabela que armazena informações referente ao entregador: <br>
-           codigo: campo que armazena um código único relativo a cada entregador.<br>
-         ENREGADOR_COMPRA: Tabela que armazena as compras que cada entregador fará.<br>
-           codigo: campo que armazena um código único relativo a cada entrega.<br>
+         PESSOA: Tabela que armazena as informações relativas as pessoas.
+           codigo: campo que armazena um código único relativo a cada pessoa.
+           nome: campo referente ao nome da pessoa.
+           forma_contato: campo multivalorado e composto que tem as formas de contato:
+             celular: campo que armazena o número da pessoa.
+             email: campo que armazena o email da pessoa.
+           endereco: campo que armazena o endereço de uma pessoa:
+             CEP:campo que armazana o CEP relativo ao endereço.
+             logradouro:campo que armazana o logradouro relativo ao endereço.
+             numero:campo que armazana o numero relativo ao endereço.
+             bairro:campo que armazana o bairro relativo ao endereço.
+             cidade:campo que armazana o cidade relativo ao endereço.
+             tipo_logradouro:campo que armazana o tipo_logradouro relativo ao endereço.
+             complemento:campo que armazana o complemento relativo ao endereço.
+             UF:campo que armazana o UF relativo ao endereço.
+         CLIENTE: Tabela que armazena informações referente ao cliente:
+           codigo: campo que armazena um código único relativo a cada pessoa.
+         ENTREGADOR: Tabela que armazena informações referente ao entregador:
+           codigo: campo que armazena um código único relativo a cada entregador.
+         ENREGADOR_COMPRA: Tabela que armazena as compras que cada entregador fará.
+           codigo: campo que armazena um código único relativo a cada entrega.
          COMPRA: Tabela referente as compras realizadas:
            codigo: campo que armazena o código referente a cada compra
          Compra_produto: relacinamento da compra de um produto.
@@ -77,8 +77,9 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
            codigo: campo que armazena o código de cada meio de pagamento.
          PRODUTO: Tabela que armazena as informações de cada produto.
            codigo: campo que possui o código de cada produto.
-         
-
+           nome: campo que possui o código de cada produto.
+           valor: campo que possui o código de cada produto.
+           descricao: campo que possuia descrição de cada produto.
   <br>
 
 
