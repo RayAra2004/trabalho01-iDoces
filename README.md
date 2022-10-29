@@ -20,22 +20,23 @@ Nossa história no ramo da doceria começou em 2006, adquirimos um food truck qu
 
 ### 3.MINI-MUNDO<br>
 
-Neste sistema temos as pessoas (podendo ser cliente ou entregador), onde iremos armazenar seu código, nome, forma de contato(celular, email), cpf e endereço(que contém CEP, logradouro, complemento, número, bairro, cidade, UF). O cliente e o entregador são uma pessoa,  possuindo código. O cliente realiza uma ou várias compras e uma compra é realizada por um ou vários clientes, que ao ser realizada armazena  um código. Esta compra refere-se a um produto, armazenando a quantidade de produtos e a data e hora que foi realizada. Sendo que uma compra possui um ou vários produtos, que têm código, nome, descrição, valor e tipo de produto e um produto é referente a várias compras. A compra também possui um meio de pagamento, que contém código, valor, tipo de pagamento, sendo que uma compra tem uma ou várias formas de pagamento e um meio de pagamento é de apenas uma compra.
+Neste sistema temos as pessoas (podendo ser cliente ou entregador), onde iremos armazenar seu código, nome, forma de contato(celular, email), cpf e endereço(que contém CEP, logradouro, complemento, número, bairro, cidade, UF). O cliente e o entregador são uma pessoa,  possuindo código. O cliente realiza uma ou várias compras e uma compra é realizada por um ou vários clientes, que ao ser realizada armazena  um código. Esta compra refere-se a um produto, armazenando a quantidade de produtos e a data e hora que foi realizada. Sendo que uma compra possui um ou vários produtos, que têm código, nome, descrição, valor e um produto é referente a várias compras. A compra também possui um meio de pagamento, que contém código, valor, tipo de pagamento, sendo que uma compra tem uma ou várias formas de pagamento e um meio de pagamento é de apenas uma compra.
 Por fim, temos o entregador realizando a entrega de várias compras e uma compra é entregue por um e apenas um entregador.
  
 
 ### 4.PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que mostre o nome de cada supervisor(a) e a quantidade de empregados supervisionados.
-* Relatório relativo aos os supervisores e supervisionados. O resultado deve conter o nome do supervisor e nome do supervisionado além da quantidade total de horas que cada supervisionado tem alocada aos projetos existentes na empresa.
-* Relatorio que mostre para cada linha obtida o nome do departamento, o valor individual de cada salario existente no  departamento e a média geral de salarios dentre todos os empregados. Os resultados devem ser apresentados ordenados por departamento.
-* Relatório que mostre as informações relacionadas a todos empregados de empresa (sem excluir ninguém). As linhas resultantes devem conter informações sobre: rg, nome, salario do empregado, data de início do salario atual, nomes dos projetos que participa, quantidade de horas e localização nos referidos projetos, numero e nome dos departamentos aos quais está alocado, informações do historico de salário como inicio, fim, e valores de salarios antigos que foram inclusos na referida tabela (caso possuam informações na mesma), além de todas informações relativas aos dependentes. 
->> ##### Observações: <br> a) perceba que este relatório pode conter linhas com alguns dados repetidos (mas não todos). <br>  b) para os empregados que não possuirem alguma destas informações o valor no registro deve aparecer sem informação/nulo. 
-* Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
+> A Empresa iDoces precisa inicialmente dos seguintes relatórios:
+* 1- Relatório que mostre o nome do entregador que fez mais entregas e a quantidade de entregas feitas em ordem descrecente.
+
+* 2- Relatório relativo a região e pedidos. O resultado deve conter o nome da região e a quantidade de pedidos feitos em ordem descrecente.
+
+* 3- Relatório referente a produto e compra. O resultado deve conter o nome do produto mais cobiçado, ou seja, o mais comprado e a quantidade de compras feitas em ordem descrecente.
+
+* 4- Relatório sobre o valor total de vendas em um determinado período de tempo. O resultado deve conter as datas(referente ao período) e o valor total de vendas.
+
+* 5- Relatório sobre o meio de pagamento. O resultado deve conter o nome do meio de pagamento mais utilizado e quantidade de vezes utilizada em ordem descrecente.
 
  ### 5.MODELO CONCEITUAL<br>
         
