@@ -6,7 +6,7 @@ Trabalho desenvolvido durante a disciplina de Banco de dados
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Carlos Eduardo de Souza Barbosa: cesbarbosa2005@gmail.com<br>
-Esther Moraes Nascimento: esthermoraesnascimento@gmail.com<br>
+Esther Moraes Nascimento: moraesesther25@gmail.com<br>
 Raynan Araujo da Silva: raynan.araujo.ifes@gmail.com<br>
 Sofia Andrade Nascimento: andradesoso10@gmail.com<br>
 <br>
@@ -38,30 +38,37 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 * Relatório que obtenha a frequencia absoluta e frequencia relativa da quantidade de cpfs únicos no relatório anterior. Apresente os resultados ordenados de forma decrescente pela frequencia relativa.
 
  ### 5.MODELO CONCEITUAL<br>
-    A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
-    B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 5 e o Máximo 7.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento<br>(se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
-    C) Principais fluxos de informação/entidades do sistema (mínimo 3). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
-    D) Qualidade e Clareza
-        Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/094e4c543fa10ca290fdcb3c77876284d708b20a/modelo_conceitual.png?raw=true)
-    
-    
-        
+![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/094e4c543fa10ca290fdcb3c77876284d708b20a/modelo_conceitual.png?raw=true)      
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    [Grupo01]: [Raynan Araujo da Silva]
 
 #### 5.2 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+         PESSOA: Tabela que armazena as informações relativas as pessoas. <br>
+           codigo: campo que armazena um código único relativo a cada pessoa. <br>
+           nome: campo referente ao nome da pessoa. <br>
+           forma_contato: campo multivalorado e composto que tem as formas de contato: <br>
+             celular: campo que armazena o número da pessoa. <br>
+             email: campo que armazena o email da pessoa. <br>
+           endereco: campo que armazena o endereço de uma pessoa: <br>
+             CEP:campo que armazana o CEP relativo ao endereço. <br>
+             logradouro:campo que armazana o logradouro relativo ao endereço. <br>
+             numero:campo que armazana o numero relativo ao endereço.<br>
+             bairro:campo que armazana o bairro relativo ao endereço. <br>
+             cidade:campo que armazana o cidade relativo ao endereço. <br>
+             tipo_logradouro:campo que armazana o tipo_logradouro relativo ao endereço. <br>
+             complemento:campo que armazana o complemento relativo ao endereço. <br>
+             UF:campo que armazana o UF relativo ao endereço. <br>
+         CLIENTE: Tabela que armazena informações referente ao cliente: <br>
+           codigo: campo que armazena um código único relativo a cada pessoa. <br>
+         ENTREGADOR: Tabela que armazena informações referente ao entregador: <br>
+           codigo: campo que armazena um código único relativo a cada entregador.<br>
+         ENREGADOR_COMPRA: Tabela que armazena as compras que cada entregador fará.<br>
+           codigo: campo que armazena um código único relativo a cada entrega.<br>
+         COMPRA: Tabela 
+
+  <br>
 
 
 ### 6	MODELO LÓGICO<br>
