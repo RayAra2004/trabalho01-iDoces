@@ -6,7 +6,7 @@ Trabalho desenvolvido durante a disciplina de Banco de dados
 ### 1. COMPONENTES<br>
 
 Integrantes do grupo:<br>
-Carlos Eduardo de Souza Barbosa: cesbarbosa2005@gmail.com<br>teste
+Carlos Eduardo de Souza Barbosa: cesbarbosa2005@gmail.com<br>
 Esther Moraes Nascimento: moraesesther25@gmail.com<br>
 Raynan Araujo da Silva: raynan.araujo.ifes@gmail.com<br>
 Sofia Andrade Nascimento: andradesoso10@gmail.com<br>
