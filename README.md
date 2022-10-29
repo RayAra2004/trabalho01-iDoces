@@ -47,7 +47,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/discipbd1/trab01/blob/master/images/concept_sample.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/543af15f7ef04b23ed023553f44406888073a436/modelo_conceitual.pngraw=true "Modelo Conceitual")
     
     
         
