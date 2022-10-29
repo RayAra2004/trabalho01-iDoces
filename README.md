@@ -136,7 +136,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
         bairro integer,
         cidade integer,
         tipo_logradouro integer,
-        endereco_PK serial PRIMARY KEY,
+        endereco_PK serial PRIMARY KEY
     );
 
     CREATE TABLE Realiza (

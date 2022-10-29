@@ -49,9 +49,7 @@ CREATE TABLE endereco (
     bairro integer,
     cidade integer,
     tipo_logradouro integer,
-    endereco_PK serial PRIMARY KEY,
-    complemento varchar(80),
-    uf integer
+    endereco_PK serial PRIMARY KEY
 );
 
 CREATE TABLE Realiza (
@@ -81,10 +79,7 @@ CREATE TABLE TIPO_LOGRADOURO (
     descricao varchar(80)
 );
 
-CREATE TABLE UF (
-    codigo serial PRIMARY KEY,
-    descricao varchar(80)
-);
+
 INSERT INTO pessoa(nome, telefone, cpf, fk_endereco_endereco_pk)
 values 	('Esther Moraes', '27998877665', '000.000.000-00', 1),
 		('Sofia Andrade', '27998877664', '111.111.111-11', 2),
