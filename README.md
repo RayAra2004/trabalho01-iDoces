@@ -40,7 +40,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 ![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_conceitual.png?raw=true)      
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Raynan Araujo da Silva]
+    [Grupo01]: [Camila Egydio, Davi Nunes, Isabelly Andrades e Yasmin Santana]
+    [Grupo02]: [Davi Salles, Lorena Toraes e Wilsiman Evangelista]
 
 #### 5.2 Descrição dos dados 
          PESSOA: Tabela que armazena as informações relativas as pessoas.
@@ -79,7 +80,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
            valor: campo que possui o código de cada produto.
            descricao: campo que possuia descrição de cada produto.
   <br>
-
 
 ### 6. MODELO LÓGICO<br>
 ![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_l%C3%B3gico.png?raw=true)
@@ -185,7 +185,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
         FOREIGN KEY (fk_pessoa_codigo)
         REFERENCES PESSOA (codigo);
 
-
     ALTER TABLE MEIO_PAGAMENTO ADD CONSTRAINT FK_MEIO_PAGAMENTO_TIPO_PAGAMENTO
         FOREIGN KEY (FK_tipo_pagamento_tipo_pagamento_PK)
         REFERENCES tipo_pagamento (tipo_pagamento_PK);
@@ -234,12 +233,10 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
         FOREIGN KEY (fk_COMPRA_codigo)
         REFERENCES COMPRA (codigo);
 
-        
-       
 ### 8.	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 
     INSERT INTO pessoa(nome, telefone, cpf, fk_endereco_endereco_pk)
-      values 	('Esther Moraes', '27998877665', '000.000.000-00', 1),
+      values  ('Esther Moraes', '27998877665', '000.000.000-00', 1),
               ('Sofia Andrade', '27998877664', '111.111.111-11', 2),
               ('Raynan Araujo', '27998877663', '222.222.222-22', 3),
               ('Carlos Eduardo Barbosa', '27998877662', '333.333.333-33', 4),
@@ -308,10 +305,10 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
               ('VIANA');
 
     INSERT INTO tipo_logradouro(descricao)
-    values('Rua'),
-    ('Alameda'),
-    ('Condomínio'),
-    ('Avenida');
+    values ('Rua'),
+           ('Alameda'),
+           ('Condomínio'),
+           ('Avenida');
 
     INSERT INTO cliente(fk_pessoa_codigo)
       values  (1),
@@ -453,7 +450,9 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
     OBS: Usar o colab para apresentar os resultados que devem incluir as instruções SQL + resultados em forma de tabela.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
-># Marco de Entrega 01: Do item 1 até o item 9.1<br>
+># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 9.1<br>
+
+
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
@@ -489,6 +488,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
 ># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
 
+
+
 ### 10 RELATÓRIOS E GRÁFICOS (Usar template disponibilizado)
 [Template de relatórios](https://github.com/discipbdint/public_samples/blob/main/BD_Exemplo_Relatorios_Empresa_VA.ipynb "Template relatórios")
 
@@ -496,17 +497,12 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
-    
-
 ### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
 #### a) Modelo (pecha kucha)<br>
 #### b) Tempo de apresentação 6:40 
 
 ># Marco de Entrega 03: Itens 10 e 11<br>
-<br>
-<br>
-<br> 
 
 
 
@@ -520,13 +516,11 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 ##### Basic Formatting in Git
     
     https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests
-    
-    
+        
 ##### Working with advanced formatting
     https://help.github.com/articles/working-with-advanced-formatting/
 #### Mastering Markdown
     https://guides.github.com/features/mastering-markdown/
-
     
 ### OBSERVAÇÕES IMPORTANTES
 
