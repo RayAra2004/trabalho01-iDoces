@@ -137,8 +137,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
         cidade integer,
         tipo_logradouro integer,
         endereco_PK serial PRIMARY KEY,
-        complemento varchar(80),
-        uf integer
     );
 
     CREATE TABLE Realiza (
@@ -168,10 +166,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
         descricao varchar(80)
     );
 
-    CREATE TABLE UF (
-        codigo serial PRIMARY KEY,
-        descricao varchar(80)
-    );
 
     ALTER TABLE PESSOA ADD CONSTRAINT FK_PESSOA_ENDERECO
         FOREIGN KEY (FK_endereco_endereco_PK)
@@ -212,10 +206,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
     ALTER TABLE endereco ADD CONSTRAINT FK_endereco_TIPO_LOGRADOURO
         FOREIGN KEY (tipo_logradouro)
         REFERENCES TIPO_LOGRADOURO (codigo);
-
-    ALTER TABLE endereco ADD CONSTRAINT FK_endereco_UF
-        FOREIGN KEY (uf)
-        REFERENCES UF (codigo);
 
     ALTER TABLE Realiza ADD CONSTRAINT FK_Realiza_COMPRA
         FOREIGN KEY (fk_COMPRA_codigo)
