@@ -85,7 +85,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
 
 ### 6	MODELO LÓGICO<br>
-        ![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_l%C3%B3gico.png?raw=true)
+![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_l%C3%B3gico.png?raw=true)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
