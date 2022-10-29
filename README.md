@@ -84,9 +84,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
 
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+        ![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_l%C3%B3gico.png?raw=true)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
