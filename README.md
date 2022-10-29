@@ -42,7 +42,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 ![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_conceitual.png?raw=true)      
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Raynan Araujo da Silva]
+    [Grupo01]: [Raynan Araujo da Silva]y
 
 #### 5.2 Descrição dos dados 
          PESSOA: Tabela que armazena as informações relativas as pessoas.
