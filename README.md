@@ -20,28 +20,27 @@ Sofia Andrade Nascimento: andradesoso10@gmail.com<br>
 
 > Neste sistema temos as pessoas (podendo ser cliente ou entregador), onde iremos armazenar seu código, nome, forma de contato(celular, email), cpf e endereço(que contém CEP, logradouro, complemento, número, bairro, cidade, UF). O cliente e o entregador são uma pessoa,  possuindo código. O cliente realiza uma ou várias compras e uma compra é realizada por um ou vários clientes, que ao ser realizada armazena  um código. Esta compra refere-se a um produto, armazenando a quantidade de produtos e a data e hora que foi realizada. Sendo que uma compra possui um ou vários produtos, que têm código, nome, descrição, valor e um produto é referente a várias compras. A compra também possui um meio de pagamento, que contém código, valor, tipo de pagamento, sendo que uma compra tem uma ou várias formas de pagamento e um meio de pagamento é de apenas uma compra.
 Por fim, temos o entregador realizando a entrega de várias compras e uma compra é entregue por um e apenas um entregador.
- 
 
 ### 4. PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     
 > A Empresa iDoces precisa inicialmente dos seguintes relatórios:
-* 1- Relatório que mostre o nome do entregador que fez mais entregas e a quantidade de entregas feitas em ordem descrecente.
+* Relatório que mostre o nome do entregador que fez mais entregas e a quantidade de entregas feitas em ordem descrecente.
 
-* 2- Relatório relativo a região e pedidos. O resultado deve conter o nome da região e a quantidade de pedidos feitos em ordem descrecente.
+* Relatório relativo a região e pedidos. O resultado deve conter o nome da região e a quantidade de pedidos feitos em ordem descrecente.
 
-* 3- Relatório referente a produto e compra. O resultado deve conter o nome do produto mais cobiçado, ou seja, o mais comprado e a quantidade de compras feitas em ordem descrecente.
+* Relatório referente a produto e compra. O resultado deve conter o nome do produto mais cobiçado, ou seja, o mais comprado e a quantidade de compras feitas em ordem descrecente.
 
-* 4- Relatório sobre o valor total de vendas em um determinado período de tempo. O resultado deve conter as datas(referente ao período) e o valor total de vendas.
+* Relatório sobre o valor total de vendas em um determinado período de tempo. O resultado deve conter as datas(referente ao período) e o valor total de vendas.
 
-* 5- Relatório sobre o meio de pagamento. O resultado deve conter o nome do meio de pagamento mais utilizado e quantidade de vezes utilizada em ordem descrecente.
+* Relatório sobre o meio de pagamento. O resultado deve conter o nome do meio de pagamento mais utilizado e quantidade de vezes utilizada em ordem descrecente.
 
  ### 5. MODELO CONCEITUAL<br>
         
 ![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_conceitual.png?raw=true)      
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Raynan Araujo da Silva]y
+    [Grupo01]: [Raynan Araujo da Silva]
 
 #### 5.2 Descrição dos dados 
          PESSOA: Tabela que armazena as informações relativas as pessoas.
@@ -51,7 +50,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
              celular: campo que armazena o número da pessoa.
              email: campo que armazena o email da pessoa.
            endereco: campo que armazena o endereço de uma pessoa:
-             CEP: campo que armazana o CEP relativo ao endereço.
+             cep: campo que armazana o CEP relativo ao endereço.
              logradouro: campo que armazana o logradouro relativo ao endereço.
              numero: campo que armazana o numero relativo ao endereço.
              bairro: campo que armazana o bairro relativo ao endereço.
