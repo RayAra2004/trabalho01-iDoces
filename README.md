@@ -1,9 +1,10 @@
 # TRABALHO 01:  iDoces
 Trabalho desenvolvido durante a disciplina de Banco de dados
 
-# Sumário
+## Sumário
 
 ### 1. COMPONENTES<br>
+
 Integrantes do grupo<br>
 Carlos Eduardo de Souza Barbosa: cesbarbosa2005@gmail.com<br>
 Esther Moraes Nascimento: moraesesther25@gmail.com<br>
@@ -11,20 +12,17 @@ Raynan Araujo da Silva: raynan.araujo.ifes@gmail.com<br>
 Sofia Andrade Nascimento: andradesoso10@gmail.com<br>
 <br>
 
-### 2.INTRODUÇÃO E MOTIVAÇÃO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> 
-<br>e motivação da escolha realizada. <br>
+### 2. INTRODUÇÃO E MOTIVAÇÃO<br>
 
-Nossa história no ramo da doceria começou em 2006, adquirimos um food truck que intitulamos de  “iDoces”, ficamos muito conhecidos pela população da comunidade e o jornal local como os melhores doces da comunidade e com isso nossa fama foi aumentando mais e mais e consequentemente o número de clientes também, por isso nós contratamos a empresa CarnanTech, para que possamos dar conta de todos os pedidos com excelência pedimos que eles criassem uma aplicação para solucionar nosso problema. 
- 
+Nossa história começou em 2006, onde as sócias Esther e Sofia adquiriram um food truck que intitularam de “docEriaS”, ficaram muito conhecidas pela população da comunidade e o jornal local como os melhores doces da comunidade, com isso nossa fama foi aumentando cada vez mais e consequentemente o número de clientes também, por isso contrataram a empresa CarnanTech, pertencente aos, futuramente, sócios Carlos Eduardo e Raynan, para que pudessem dar conta de todos os pedidos com excelência pedimos que criassem uma aplicação para solucionar nosso problema. A partir desse momento, unificamos as duas pequenas empresas e nos tornamos um grande delivery de guloseimas, que foi nomeado de “iDoce”. 
 
-### 3.MINI-MUNDO<br>
+### 3. MINI-MUNDO<br>
 
 Neste sistema temos as pessoas (podendo ser cliente ou entregador), onde iremos armazenar seu código, nome, forma de contato(celular, email), cpf e endereço(que contém CEP, logradouro, complemento, número, bairro, cidade, UF). O cliente e o entregador são uma pessoa,  possuindo código. O cliente realiza uma ou várias compras e uma compra é realizada por um ou vários clientes, que ao ser realizada armazena  um código. Esta compra refere-se a um produto, armazenando a quantidade de produtos e a data e hora que foi realizada. Sendo que uma compra possui um ou vários produtos, que têm código, nome, descrição, valor e um produto é referente a várias compras. A compra também possui um meio de pagamento, que contém código, valor, tipo de pagamento, sendo que uma compra tem uma ou várias formas de pagamento e um meio de pagamento é de apenas uma compra.
 Por fim, temos o entregador realizando a entrega de várias compras e uma compra é entregue por um e apenas um entregador.
  
 
-### 4.PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
+### 4. PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
     
 > A Empresa iDoces precisa inicialmente dos seguintes relatórios:
@@ -38,7 +36,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
 * 5- Relatório sobre o meio de pagamento. O resultado deve conter o nome do meio de pagamento mais utilizado e quantidade de vezes utilizada em ordem descrecente.
 
- ### 5.MODELO CONCEITUAL<br>
+ ### 5. MODELO CONCEITUAL<br>
         
 ![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_conceitual.png?raw=true)      
     
@@ -53,14 +51,14 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
              celular: campo que armazena o número da pessoa.
              email: campo que armazena o email da pessoa.
            endereco: campo que armazena o endereço de uma pessoa:
-             CEP:campo que armazana o CEP relativo ao endereço.
-             logradouro:campo que armazana o logradouro relativo ao endereço.
-             numero:campo que armazana o numero relativo ao endereço.
-             bairro:campo que armazana o bairro relativo ao endereço.
-             cidade:campo que armazana o cidade relativo ao endereço.
-             tipo_logradouro:campo que armazana o tipo_logradouro relativo ao endereço.
-             complemento:campo que armazana o complemento relativo ao endereço.
-             UF:campo que armazana o UF relativo ao endereço.
+             CEP: campo que armazana o CEP relativo ao endereço.
+             logradouro: campo que armazana o logradouro relativo ao endereço.
+             numero: campo que armazana o numero relativo ao endereço.
+             bairro: campo que armazana o bairro relativo ao endereço.
+             cidade: campo que armazana o cidade relativo ao endereço.
+             tipo_logradouro: campo que armazana o tipo_logradouro relativo ao endereço.
+             complemento: campo que armazana o complemento relativo ao endereço.
+             UF: campo que armazana o UF relativo ao endereço.
          CLIENTE: Tabela que armazena informações referente ao cliente:
            codigo: campo que armazena um código único relativo a cada pessoa.
          ENTREGADOR: Tabela que armazena informações referente ao entregador:
@@ -84,15 +82,15 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
   <br>
 
 
-### 6	MODELO LÓGICO<br>
+### 6. MODELO LÓGICO<br>
 ![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_l%C3%B3gico.png?raw=true)
 
-### 7	MODELO FÍSICO<br>
+### 7.	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
         
        
-### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
+### 8.	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
         b) Criar um novo banco de dados para testar a restauracao 
@@ -100,7 +98,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
         c) formato .SQL
 
 
-### 9	TABELAS E PRINCIPAIS CONSULTAS<br>
+### 9.	TABELAS E PRINCIPAIS CONSULTAS<br>
     OBS: Usar o colab para apresentar os resultados que devem incluir as instruções SQL + resultados em forma de tabela.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
 
