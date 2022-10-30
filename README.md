@@ -166,7 +166,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
         descricao varchar(80)
     );
 
-
     ALTER TABLE PESSOA ADD CONSTRAINT FK_PESSOA_ENDERECO
         FOREIGN KEY (FK_endereco_endereco_PK)
         REFERENCES endereco (endereco_PK);
@@ -440,8 +439,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br> 
 [Colab - iDoces](https://colab.research.google.com/drive/1oZk6KvPkMWBv3hGdXr2CigjIyJSSYesY?usp=sharing)
 ># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 9.1<br>
-
-
+<br>
+<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
@@ -475,9 +474,9 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
      a) Criar minimo 1 envolvendo GROUP BY
      b) Criar minimo 1 envolvendo algum tipo de junção
 
-># Marco de Entrega 02: Do item 9.2 até o ítem 9.10<br>
-
-
+># MARCO DA ENTREGA 02: DO ITEM 9.2 AO ITEM 9.10<br>
+<br>
+<br>
 
 ### 10 RELATÓRIOS E GRÁFICOS (Usar template disponibilizado)
 [Template de relatórios](https://github.com/discipbdint/public_samples/blob/main/BD_Exemplo_Relatorios_Empresa_VA.ipynb "Template relatórios")
@@ -491,9 +490,9 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 #### a) Modelo (pecha kucha)<br>
 #### b) Tempo de apresentação 6:40 
 
-># Marco de Entrega 03: Itens 10 e 11<br>
-
-
+># MARCO DA ENTREGA 02: DO ITEM 10 AO ITEM 11<br>
+<br>
+<br>
 
 ### 12 FORMATACAO NO GIT:<br> 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/
@@ -511,7 +510,7 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 #### Mastering Markdown
     https://guides.github.com/features/mastering-markdown/
     
-### OBSERVAÇÕES IMPORTANTES
+#OBSERVAÇÕES IMPORTANTES
 
 #### Todos os arquivos que fazem parte do projeto (Imagens, pdfs, arquivos fonte, etc..), devem estar presentes no GIT. Os arquivos do projeto vigente não devem ser armazenados em quaisquer outras plataformas.
 1. <strong>Caso existam arquivos com conteúdos sigilosos<strong>, comunicar o professor que definirá em conjunto com o grupo a melhor forma de armazenamento do arquivo.
@@ -520,13 +519,9 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 #### Os usuários criados no GIT devem possuir o nome de identificação do aluno (não serão aceitos nomes como Eu123, meuprojeto, pro456, etc). Em caso de dúvida comunicar o professor.
 
-
 Link para BrModelo:<br>
 http://www.sis4.com/brModelo/download.html
 <br>
 
-
 Link para curso de GIT<br>
 ![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
-
-
