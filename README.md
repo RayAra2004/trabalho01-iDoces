@@ -437,9 +437,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
               ('CARTÃO CRÉDITO');
 
 ### 9.	TABELAS E PRINCIPAIS CONSULTAS<br>
-    OBS: Usar o colab para apresentar os resultados que devem incluir as instruções SQL + resultados em forma de tabela.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-
+    Link do Colab: https://colab.research.google.com/drive/1oZk6KvPkMWBv3hGdXr2CigjIyJSSYesY?usp=sharing
 ># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 9.1<br>
 
 
