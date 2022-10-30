@@ -477,23 +477,23 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 <br>
 <br>
 
-### 10 RELATÓRIOS E GRÁFICOS (Usar template disponibilizado)
+### 10. RELATÓRIOS E GRÁFICOS (Usar template disponibilizado)
 [Template de relatórios](https://github.com/discipbdint/public_samples/blob/main/BD_Exemplo_Relatorios_Empresa_VA.ipynb "Template relatórios")
 
 #### a) análises e resultados provenientes do banco de dados desenvolvido (usar modelo disponível)
 #### b) link com exemplo de relatórios será disponiblizado pelo professor no AVA
 #### OBS: Esta é uma atividade de grande relevância no contexto do trabalho. Mantenha o foco nos 5 principais relatórios/resultados visando obter o melhor resultado possível.
 
-### 11	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
+### 11.	AJUSTES DA DOCUMENTAÇÃO, CRIAÇÃO DOS SLIDES E VÍDEO PARA APRESENTAÇAO FINAL <br>
 
 #### a) Modelo (pecha kucha)<br>
 #### b) Tempo de apresentação 6:40 
 
-># MARCO DA ENTREGA 02: DO ITEM 10 AO ITEM 11<br>
+># MARCO DA ENTREGA 03: DO ITEM 10 AO ITEM 11<br>
 <br>
 <br>
 
-### 12 FORMATACAO NO GIT:<br> 
+### 12. FORMATACAO NO GIT:<br> 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/
 <comentario no git>
     
