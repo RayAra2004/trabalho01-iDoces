@@ -10,11 +10,10 @@ Carlos Eduardo Souza Barbosa: cesbarbosa2005@gmail.com<br>
 Esther Moraes Nascimento: moraesesther25@gmail.com<br>
 Raynan Araujo da Silva: raynan.araujo.ifes@gmail.com<br>
 Sofia Andrade Nascimento: andradesoso10@gmail.com<br>
-<br>
 
 ### 2. INTRODUÇÃO E MOTIVAÇÃO<br>
 
-> Nossa história começou em 2006, onde as sócias Esther e Sofia adquiriram um food truck que intitularam de “docEriaS”, ficaram muito conhecidas pela população da comunidade e o jornal local como os melhores doces da comunidade, com isso nossa fama foi aumentando cada vez mais e consequentemente o número de clientes também, por isso contrataram a empresa CarnanTech, pertencente aos, futuramente, sócios Carlos Eduardo e Raynan, para que pudessem dar conta de todos os pedidos com excelência pedimos que criassem uma aplicação para solucionar nosso problema. A partir desse momento, unificamos as duas pequenas empresas e nos tornamos um grande delivery de guloseimas, que foi nomeado de “iDoce”. 
+> Nossa história começou em 2006, onde as sócias Esther e Sofia adquiriram um food truck que intitularam de “docEriaS”, ficaram muito conhecidas pela população da comunidade e o jornal local como os melhores doces da comunidade, com isso nossa fama foi aumentando cada vez mais e consequentemente o número de clientes também, por isso contrataram a empresa CarnanTech, pertencente aos, futuramente, sócios Carlos Eduardo e Raynan, para que pudessem dar conta de todos os pedidos com excelência pedimos que criassem uma aplicação para solucionar nosso problema. A partir desse momento, unificamos as duas pequenas empresas e nos tornamos um grande delivery de guloseimas, que foi nomeado de “iDoce”.
 
 ### 3. MINI-MUNDO<br>
 
