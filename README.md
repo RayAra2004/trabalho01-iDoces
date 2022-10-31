@@ -9,7 +9,7 @@ Integrantes do grupo:<br>
 Carlos Eduardo Souza Barbosa: cesbarbosa2005@gmail.com<br>
 Esther Moraes Nascimento: moraesesther25@gmail.com<br>
 Raynan Araujo da Silva: raynan.araujo.ifes@gmail.com<br>
-Sofia Andrade Nascimento: andradesoso10@gmail.com<br>
+Sofia Andrade Nascimento: andradesoso16@gmail.com<br>
 
 ### 2. INTRODUÇÃO E MOTIVAÇÃO<br>
 
@@ -17,8 +17,8 @@ Sofia Andrade Nascimento: andradesoso10@gmail.com<br>
 
 ### 3. MINI-MUNDO<br>
 
-> Neste sistema temos as pessoas (podendo ser cliente ou entregador), onde iremos armazenar seu código, nome, forma de contato(celular, email), cpf e endereço(que contém CEP, logradouro, complemento, número, bairro, cidade, UF). O cliente e o entregador são uma pessoa,  possuindo código. O cliente realiza uma ou várias compras e uma compra é realizada por um ou vários clientes, que ao ser realizada armazena  um código. Esta compra refere-se a um produto, armazenando a quantidade de produtos e a data e hora que foi realizada. Sendo que uma compra possui um ou vários produtos, que têm código, nome, descrição, valor e um produto é referente a várias compras. A compra também possui um meio de pagamento, que contém código, valor, tipo de pagamento, sendo que uma compra tem uma ou várias formas de pagamento e um meio de pagamento é de apenas uma compra.
-Por fim, temos o entregador realizando a entrega de várias compras e uma compra é entregue por um e apenas um entregador.
+> Neste sistema temos as pessoas (podendo ser cliente ou entregador), onde iremos armazenar seu username, senha, nome, forma de contato (celular, email), cpf e endereço (que contém CEP, logradouro, tipo de logradouro, número, bairro e cidade). O cliente e o entregador são uma pessoa, sendo que entregador possui código e salário e cliente possui apenas o código. O cliente realiza uma ou várias compras e uma compra é realizada por um ou vários clientes, que ao ser realizada armazena um código e a data e hora da mesma. Esta compra refere-se a um produto, armazenando a quantidade de produtos. Sendo que uma compra possui um ou vários produtos, que têm código, nome, descrição, valor e um produto é referente a várias compras. A compra também possui um pagamento, que contém código, valor e tipo de pagamento, sendo que uma compra tem uma ou várias formas de pagamento e um pagamento é de várias compras.
+Por fim, temos o entregador realizando a entrega de várias compras e uma compra é entregue por apenas um entregador.
 
 ### 4. PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
 #### 4.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
@@ -44,7 +44,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
 #### 5.2 Descrição dos dados 
          PESSOA: Tabela que armazena as informações relativas as pessoas.
-           codigo: campo que armazena um código único relativo a cada pessoa.
+           username: campo que armazena a identificação da pessoa.
+           senha: campo que armazena a autenticação do username.
            nome: campo referente ao nome da pessoa.
            forma_contato: campo multivalorado e composto que tem as formas de contato:
              celular: campo que armazena o número da pessoa.
@@ -56,12 +57,11 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
              bairro: campo que armazana o bairro relativo ao endereço.
              cidade: campo que armazana o cidade relativo ao endereço.
              tipo_logradouro: campo que armazana o tipo_logradouro relativo ao endereço.
-             complemento: campo que armazana o complemento relativo ao endereço.
-             UF: campo que armazana o UF relativo ao endereço.
          CLIENTE: Tabela que armazena informações referente ao cliente:
            codigo: campo que armazena um código único relativo a cada pessoa.
          ENTREGADOR: Tabela que armazena informações referente ao entregador:
            codigo: campo que armazena um código único relativo a cada entregador.
+           salario: campo que armazena o valor recebido referente ao trabalho do entregador.
          ENREGADOR_COMPRA: Tabela que armazena as compras que cada entregador fará.
            codigo: campo que armazena um código único relativo a cada entrega.
          COMPRA: Tabela referente as compras realizadas:
