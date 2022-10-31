@@ -26,7 +26,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 > A Empresa iDoces precisa inicialmente dos seguintes relatórios:
 * Relatório que mostre o nome do entregador que fez mais entregas e a quantidade de entregas feitas em ordem descrecente.
 
-* Relatório relativo a região e pedidos. O resultado deve conter o nome da região e a quantidade de pedidos feitos em ordem descrecente.
+* Relatório relativo a cidade e pedidos. O resultado deve conter o nome da cidade e a quantidade de pedidos feitos em ordem descrecente.
 
 * Relatório referente a produto e compra. O resultado deve conter o nome do produto mais cobiçado, ou seja, o mais comprado e a quantidade de compras feitas em ordem descrecente.
 
