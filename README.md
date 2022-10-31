@@ -1,11 +1,11 @@
-# TRABALHO 01:  iDoces
+# TRABALHO 01: iDoces
 Trabalho desenvolvido durante a disciplina de Banco de dados
 
 ## Sumário
 
 ### 1. COMPONENTES<br>
 
-Integrantes do grupo:<br>
+Integrantes do Grupo:<br>
 Carlos Eduardo Souza Barbosa: cesbarbosa2005@gmail.com<br>
 Esther Moraes Nascimento: moraesesther25@gmail.com<br>
 Raynan Araujo da Silva: raynan.araujo.ifes@gmail.com<br>
@@ -17,7 +17,7 @@ Sofia Andrade Nascimento: andradesoso16@gmail.com<br>
 
 ### 3. MINI-MUNDO<br>
 
-> Neste sistema temos as pessoas (podendo ser cliente ou entregador), onde iremos armazenar seu username, senha, nome, forma de contato (celular, email), cpf e endereço (que contém CEP, logradouro, tipo de logradouro, número, bairro e cidade). O cliente e o entregador são uma pessoa, sendo que entregador possui código e salário e cliente possui apenas o código. O cliente realiza uma ou várias compras e uma compra é realizada por um ou vários clientes, que ao ser realizada armazena um código e a data e hora da mesma. Esta compra refere-se a um produto, armazenando a quantidade de produtos. Sendo que uma compra possui um ou vários produtos, que têm código, nome, descrição, valor e um produto é referente a várias compras. A compra também possui um pagamento, que contém código, valor e tipo de pagamento, sendo que uma compra tem uma ou várias formas de pagamento e um pagamento é de várias compras.
+> Neste sistema temos as pessoas (podendo ser cliente ou entregador), onde iremos armazenar seu username, senha, nome, forma de contato (celular, email), cpf e endereço (que contém CEP, logradouro, tipo de logradouro, número, bairro e cidade). O entregador é uma pessoa, sendo que entregador possui código e salário. A pessoa realiza uma ou várias compras e uma compra é realizada por uma ou várias pessoas, que ao ser realizada armazena um código e a data e hora da mesma. Esta compra refere-se a um produto, armazenando a quantidade de produtos. Sendo que uma compra possui um ou vários produtos, que têm código, nome, descrição, valor e um produto é referente a várias compras. A compra também possui um pagamento, que contém código, valor e tipo de pagamento, sendo que uma compra tem uma ou várias formas de pagamento e um pagamento é de várias compras.
 Por fim, temos o entregador realizando a entrega de várias compras e uma compra é entregue por apenas um entregador.
 
 ### 4. PERGUNTAS A SEREM RESPONDIDAS E TABELA DE DADOS<br>
@@ -57,8 +57,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
              bairro: campo que armazana o bairro relativo ao endereço.
              cidade: campo que armazana o cidade relativo ao endereço.
              tipo_logradouro: campo que armazana o tipo_logradouro relativo ao endereço.
-         CLIENTE: Tabela que armazena informações referente ao cliente:
-           codigo: campo que armazena um código único relativo a cada pessoa.
          ENTREGADOR: Tabela que armazena informações referente ao entregador:
            codigo: campo que armazena um código único relativo a cada entregador.
            salario: campo que armazena o valor recebido referente ao trabalho do entregador.
@@ -69,7 +67,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
          Compra_produto: relacinamento da compra de um produto.
            data_hora: campo que armazena a data e a hora de cada compra.
            qtd: campo que armazena a quantidade de produtos de cada compra.
-         MEIO_PAGAMENTO: Tabela que aramazena os meios de pagamentos possíveis para realizar uma compra.
+         PAGAMENTO: Tabela que aramazena os meios de pagamentos possíveis para realizar uma compra.
            tipo_pagamento: campo multivalorado que armazena a os tipos de pagamento.
            valor: campo referente ao valor pago na compra.
            codigo: campo que armazena o código de cada meio de pagamento.
@@ -439,7 +437,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 [Colab - iDoces](https://colab.research.google.com/drive/1oZk6KvPkMWBv3hGdXr2CigjIyJSSYesY?usp=sharing)
 ># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 9.1<br>
 <br>
-<br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
@@ -475,7 +472,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
 ># MARCO DA ENTREGA 02: DO ITEM 9.2 AO ITEM 9.10<br>
 <br>
-<br>
 
 ### 10. RELATÓRIOS E GRÁFICOS (Usar template disponibilizado)
 [Template de relatórios](https://github.com/discipbdint/public_samples/blob/main/BD_Exemplo_Relatorios_Empresa_VA.ipynb "Template relatórios")
@@ -490,7 +486,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 #### b) Tempo de apresentação 6:40 
 
 ># MARCO DA ENTREGA 03: DO ITEM 10 AO ITEM 11<br>
-<br>
 <br>
 
 ### 12. FORMATACAO NO GIT:<br> 
