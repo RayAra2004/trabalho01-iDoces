@@ -79,7 +79,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
   <br>
 
 ### 6. MODELO LÓGICO<br>
-![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_logico.png?raw=true)
+![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_logico_2.png?raw=true)
 
 ### 7.	MODELO FÍSICO<br>
     
