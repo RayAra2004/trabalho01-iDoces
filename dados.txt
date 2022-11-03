@@ -105,11 +105,11 @@
 (14),
 (15);
 
-(16),
-(17),
-(18),
-(19),
-(20);
+('marilopes', 1500.00),
+('brugms', 2350.00),
+('caiof', 1000.00),
+('moises1', 4280.00),
+('willevan', 1200.00);
 
 ('Bolo de chocolate', 8.00, 'Bolo de chocolate belga, vendido em fatias),
 ('Pote da felicidade', 13.00, 'Pote da felicidade (brownie com morango, ninho com Nutella, Ouro Branco)'),
