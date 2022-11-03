@@ -9,7 +9,7 @@
 ('kamabate', 'kaka12345', Kauã Mateus Terra', '888.888.888-88',9),
 ('camsmila', 'caca12345', 'Camila Egydio', '999.999.999-99', 10), 
 ('isybelly', 'bebel12345', 'Isabelly Andrades', '101.101.101-10', 11),
-('lores', 'lolo12345', 'Lorena Toraes', '121.121.121-12', 12),
+('loret', 'lolo12345', 'Lorena Toraes', '121.121.121-12', 12),
 ('pedinho', 'pepe12345', 'Pedro Ramos', '131.131.131-13', 13),
 ('jpbarcellos', 'jpjp12345', 'João Pedro Barcellos', '141.141.141-14', 14),
 ('eduolmo', 'dudu12345', 'Eduardo Olmo', '151.151.151-15', 15),
@@ -18,6 +18,27 @@
 ('caiof', 'caca12345', 'Caio Fraga', '181.181.181-18', 18),
 ('moises1', 'momo12345', 'Moisés Omena', '191.191.191-19', 19),
 ('willevan', 'will12345', 'Wilsiman Evangelista', '202.202.202-20', 20);
+
+('98181-4344', 'moraesesther25@ifes.com'),
+('99829-6191', 'andradesoso16@ifes.com'),
+('99527-3201', 'raynan.araujo@ifes.com'),
+('99744-5347', 'cadu.barbosa@ifes.com'),
+('99651-7829', 'maminlinda@ifes.com'),
+('99662-3266', 'davisalles@ifes.com'),
+('99205-1225', 'davinunes@ifes.com'),
+('99895-0028', 'harianadami@ifes.com'),
+('98157-4947', 'kauaterra@ifes.com'),
+('99500-0028', 'camsegydio@ifes.com'),
+('99981-7077', 'isabellyandrades@ifes.com'),
+('99504-6166' , 'loretoraes@ifes.com'),
+('99890-5887', 'pedrosoares@ifes.com'),
+('99986-0303', 'barcellosjp@ifes.com'),
+('99737-6136', 'eduardolmo2ifes.com'),
+('99867-7339' , 'marilopes@ifes.com'),
+('99891-9703', 'brunarocha@ifes.com'),
+('99610-7736','caiofg@ifes.com'),
+('99752-4329', 'moises.bode@ifes.com'),
+('99657-0589', 'wilsiman@ifes.com');
 
 (29162200, 'Limoeiro', 12, 1, 1, 2),
 (29162250, 'São José', 13, 7, 2, 3),
@@ -105,7 +126,6 @@
 ('Banoffee', 16.00, 'Torta feita de bananas, creme e uma calda de caramelo, com sua base de biscoitos. Vendido a fatia'),
 ('Torta de Ninho com Nutella', 15.00, 'Torta feita com massa de leite ninho recheado de nutella. Vendido a fatia'),
 ('Cheesecake', 22.00, 'Casquinha de biscoito crocante e um recheio à base de cream cheese, coberto com geleia de morangos frescos.');
-
 
 (3, '2022-09-13 14:01:12', 1, 1),
 (10, '2022-10-22 15:03:13', 2, 2),
