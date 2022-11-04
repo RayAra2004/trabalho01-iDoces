@@ -508,6 +508,8 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 #### Todos os arquivos que fazem parte do projeto (Imagens, pdfs, arquivos fonte, etc..), devem estar presentes no GIT. Os arquivos do projeto vigente não devem ser armazenados em quaisquer outras plataformas.
 1. <strong> Caso existam arquivos com conteúdos sigilosos<strong>, comunicar o professor que definirá em conjunto com o grupo a melhor forma de armazenamento do arquivo.
+    
+<comentario no git>
 
 #### Todos os grupos deverão fazer Fork deste repositório e dar permissões administrativas ao usuário do git "profmoisesomena", para acompanhamento do trabalho.
 
@@ -516,6 +518,6 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 Link para BrModelo:
     http://www.sis4.com/brModelo/download.html
 
-Link para curso de GIT
-    ![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
+Link para curso de GIT:
+    https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
 <br>
