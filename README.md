@@ -507,7 +507,7 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 ### OBSERVAÇÕES IMPORTANTES
 
 #### Todos os arquivos que fazem parte do projeto (Imagens, pdfs, arquivos fonte, etc..), devem estar presentes no GIT. Os arquivos do projeto vigente não devem ser armazenados em quaisquer outras plataformas.
-    1. Caso existam arquivos com conteúdos sigilosos<strong>, comunicar o professor que definirá em conjunto com o grupo a melhor forma de armazenamento do arquivo.
+    <strong> Caso existam arquivos com conteúdos sigilosos <strong>, comunicar o professor que definirá em conjunto com o grupo a melhor forma de armazenamento do arquivo.
 
 #### Todos os grupos deverão fazer Fork deste repositório e dar permissões administrativas ao usuário do git "profmoisesomena", para acompanhamento do trabalho.
 
