@@ -517,5 +517,5 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
     http://www.sis4.com/brModelo/download.html
 
 #### Link para curso de GIT:
-    https://www.youtube.com/curso_git(https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
+    ![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
 <br>
