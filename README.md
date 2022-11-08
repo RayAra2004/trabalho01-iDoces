@@ -44,9 +44,11 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
 #### 5.2 Descrição dos dados 
          PESSOA: Tabela que armazena as informações relativas as pessoas.
+           codigo: campo que armazena um código único relativo a cada pessoa.
            username: campo que armazena a identificação da pessoa.
            senha: campo que armazena a autenticação do username.
            nome: campo referente ao nome da pessoa.
+           cpf: campo referente ao CPF da pessoa.
            forma_contato: campo multivalorado e composto que tem as formas de contato:
              celular: campo que armazena o número da pessoa.
              email: campo que armazena o email da pessoa.
@@ -58,7 +60,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
              cidade: campo que armazana o cidade relativo ao endereço.
              tipo_logradouro: campo que armazana o tipo_logradouro relativo ao endereço.
          ENTREGADOR: Tabela que armazena informações referente ao entregador:
-           codigo: campo que armazena um código único relativo a cada entregador.
            salario: campo que armazena o valor recebido referente ao trabalho do entregador.
          ENREGADOR_COMPRA: Tabela que armazena as compras que cada entregador fará.
            codigo: campo que armazena um código único relativo a cada entrega.
