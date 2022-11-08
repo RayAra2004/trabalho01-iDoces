@@ -61,17 +61,15 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
              tipo_logradouro: campo que armazana o tipo_logradouro relativo ao endereço.
          ENTREGADOR: Tabela que armazena informações referente ao entregador:
            salario: campo que armazena o valor recebido referente ao trabalho do entregador.
-         ENREGADOR_COMPRA: Tabela que armazena as compras que cada entregador fará.
-           codigo: campo que armazena um código único relativo a cada entrega.
          COMPRA: Tabela referente as compras realizadas:
            codigo: campo que armazena o código referente a cada compra
-         Compra_produto: relacinamento da compra de um produto.
+         Compra_produto: relacionamento da compra de um produto.
            data_hora: campo que armazena a data e a hora de cada compra.
            qtd: campo que armazena a quantidade de produtos de cada compra.
          PAGAMENTO: Tabela que aramazena os meios de pagamentos possíveis para realizar uma compra.
            tipo_pagamento: campo multivalorado que armazena a os tipos de pagamento.
            valor: campo referente ao valor pago na compra.
-           codigo: campo que armazena o código de cada meio de pagamento.
+           codigo: campo que armazena o código de cada pagamento.
          PRODUTO: Tabela que armazena as informações de cada produto.
            codigo: campo que possui o código de cada produto.
            nome: campo que possui o código de cada produto.
