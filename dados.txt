@@ -1,24 +1,25 @@
 #PESSOA#
-('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', 1)
-('andradesoso', 'soso12345', 'Sofia Andrade', '111.111.111-11', 2),
-('rayara9', 'ray12345', 'Raynan Araujo', '222.222.222-22', 3),
-('caduchato', 'caca12345', 'Carlos Eduardo Barbosa', '333.333.333-33', 4),
-('maminlinda', 'mamin12345', 'Yasmin Santana', '444.444.444-44', 5),
-('david', 'dada12345', 'Davi Salles', '555.555.555-55', 6),
-('emonunes', 'emo12345', 'Davi Nunes', '666.666.666-66', 7),
-('ariel', 'haha12345', 'Harian Adami', '777.777.777-77',8),
-('kamabate', 'kaka12345', 'Kauã Mateus Terra', '888.888.888-88',9),
-('camsmila', 'caca12345', 'Camila Egydio', '999.999.999-99', 10), 
-('isybelly', 'bebel12345', 'Isabelly Andrades', '101.101.101-10', 11),
-('loret', 'lolo12345', 'Lorena Toraes', '121.121.121-12', 12),
-('pedinho', 'pepe12345', 'Pedro Ramos', '131.131.131-13', 13),
-('jpbarcellos', 'jpjp12345', 'João Pedro Barcellos', '141.141.141-14', 14),
-('eduolmo', 'dudu12345', 'Eduardo Olmo', '151.151.151-15', 15),
-('marilopes', 'mama12345', 'Mariana Lopes', '161.161.161-16', 16),
-('brugms', 'bubu12345', 'Bruna Gomes', '171.171.171-17', 17),
-('caiof', 'caca12345', 'Caio Fraga', '181.181.181-18', 18),
-('moises1', 'momo12345', 'Moisés Omena', '191.191.191-19', 19),
-('willevan', 'will12345', 'Wilsiman Evangelista', '202.202.202-20', 20);
+INSERT INTO PESSOA(username, senha, nome, cpf, fk_endereco_codigo,fk_FORMA_CONTATO_codigo)
+values 	('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', 1, 1)
+		('andradesoso', 'soso12345', 'Sofia Andrade', '111.111.111-11', 2, 2),
+		('rayara9', 'ray12345', 'Raynan Araujo', '222.222.222-22', 3, 3),
+		('caduchato', 'caca12345', 'Carlos Eduardo Barbosa', '333.333.333-33', 4, 4),
+		('maminlinda', 'mamin12345', 'Yasmin Santana', '444.444.444-44', 5, 5),
+		('david', 'dada12345', 'Davi Salles', '555.555.555-55', 6, 6),
+		('emonunes', 'emo12345', 'Davi Nunes', '666.666.666-66', 7, 7),
+		('ariel', 'haha12345', 'Harian Adami', '777.777.777-77',8, 8),
+		('kamabate', 'kaka12345', 'Kauã Mateus Terra', '888.888.888-88',9, 9),
+		('camsmila', 'caca12345', 'Camila Egydio', '999.999.999-99', 10, 10), 
+		('isybelly', 'bebel12345', 'Isabelly Andrades', '101.101.101-10', 11, 11),
+		('loret', 'lolo12345', 'Lorena Toraes', '121.121.121-12', 12, 12),
+		('pedinho', 'pepe12345', 'Pedro Ramos', '131.131.131-13', 13, 13),
+		('jpbarcellos', 'jpjp12345', 'João Pedro Barcellos', '141.141.141-14', 14, 14),
+		('eduolmo', 'dudu12345', 'Eduardo Olmo', '151.151.151-15', 15, 15),
+		('marilopes', 'mama12345', 'Mariana Lopes', '161.161.161-16', 16, 16),
+		('brugms', 'bubu12345', 'Bruna Gomes', '171.171.171-17', 17, 17),
+		('caiof', 'caca12345', 'Caio Fraga', '181.181.181-18', 18, 18),
+		('moises1', 'momo12345', 'Moisés Omena', '191.191.191-19', 19, 19),
+		('willevan', 'will12345', 'Wilsiman Evangelista', '202.202.202-20', 20, 20);
 
 #FORMA DE CONTATO#
 ('98181-4344', 'moraesesther25@ifes.com'),
