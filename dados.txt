@@ -7,7 +7,7 @@
 ('david', 'dada12345', 'Davi Salles', '555.555.555-55', 6),
 ('emonunes', 'emo12345', 'Davi Nunes', '666.666.666-66', 7),
 ('ariel', 'haha12345', 'Harian Adami', '777.777.777-77',8),
-('kamabate', 'kaka12345', Kauã Mateus Terra', '888.888.888-88',9),
+('kamabate', 'kaka12345', 'Kauã Mateus Terra', '888.888.888-88',9),
 ('camsmila', 'caca12345', 'Camila Egydio', '999.999.999-99', 10), 
 ('isybelly', 'bebel12345', 'Isabelly Andrades', '101.101.101-10', 11),
 ('loret', 'lolo12345', 'Lorena Toraes', '121.121.121-12', 12),
