@@ -158,9 +158,11 @@
 ('Bolo de pote', 9.00, 'Bolo gelado de ninho com nutella'),
 ('Torta de limão', 15.00, 'Torta feita com massa de biscoito Maria, e raspas de limão. Vendido a fatia'),
 ('Cookie', 10.00, 'Cookie de massa tradicional com gotas de chocolate'),
+('Coxinha de morango', 7.50, 'Coxinha com massa de brigadeiro branco recheada com um morango'),
 ('Bento cake', 40.5, 'Bolo personalizado de 10cm, recheio de brigadeiro branco e morangos'),
 ('Banoffee', 16.00, 'Torta feita de bananas, creme e uma calda de caramelo, com sua base de biscoitos. Vendido a fatia'),
 ('Torta de Ninho com Nutella', 15.00, 'Torta feita com massa de leite ninho recheado de nutella. Vendido a fatia'),
+('Cucuz doce', 4.50, 'Feito a base de tapioca junto a coco fresco ralado e leite condensado'),
 ('Cheesecake', 22.00, 'Casquinha de biscoito crocante e um recheio à base de cream cheese, coberto com geleia de morangos frescos.');
 
 #TIPO_PAGAMENTO#
