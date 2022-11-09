@@ -46,46 +46,48 @@ INSERT INTO FORMA_CONTATO(celular, email)
 			('99657-0589', 'wilsiman@ifes.com');
 			
 #ENDEREÇO#
-(29162200, 'Limoeiro', 12, 1, 1, 2),
-(29162250, 'São José', 13, 7, 2, 3),
-(29162219, 'Corsanto', 22, 1, 3, 1),
-(29162222, 'Laranjeiras', 14, 2, 6, 1),
-(29162213, 'Mônica', 40, 7, 3, 4),
-(29162214, 'Angelim', 44, 1, 4, 4),
-(29162215, 'Alto da Boa Vista', 85, 4, 5, 2),
-(29162216, 'Eurico', 11, 8, 2, 3),
-(29162218, 'Costa Bela', 289, 10, 6, 4),
-(29162220, 'IFES', 35, 1, 1, 3),
-(29162298, 'FUA', 1001, 1, 1, 4),
-(29162111, 'Andrades', 75, 1, 1, 4),
-(29162900, 'Nascimentos', 90, 1, 5, 1),
-(29162400, 'Manguinhos', 115, 1, 2, 3),
-(29162500, 'Goiaba', 89, 6, 5, 3),
-(29162567, 'Mangueira', 63, 9, 6, 4),
-(29162908, 'Carambola', 25, 12, 3, 2),
-(29162123, 'Moraes', 28, 1, 3, 4),
-(29162456, 'Lado B', 846, 7, 6, 1),
-(29162109, 'Planalto', 339, 2, 2, 4);
+INSERT INTO endereco(cep, logradouro, numero, fk_bairro_codigo, fk_cidade_codigo, fk_tipo_logradouro_codigo)
+	values  (29162200, 'Limoeiro', 12, 1, 1, 2),
+			(29162250, 'São José', 13, 7, 2, 3),
+			(29162219, 'Corsanto', 22, 1, 3, 1),
+			(29162222, 'Laranjeiras', 14, 2, 6, 1),
+			(29162213, 'Mônica', 40, 7, 3, 4),
+			(29162214, 'Angelim', 44, 1, 4, 4),
+			(29162215, 'Alto da Boa Vista', 85, 4, 5, 2),
+			(29162216, 'Eurico', 11, 8, 2, 3),
+			(29162218, 'Costa Bela', 289, 10, 6, 4),
+			(29162220, 'IFES', 35, 1, 1, 3),
+			(29162298, 'FUA', 1001, 1, 1, 4),
+			(29162111, 'Andrades', 75, 1, 1, 4),
+			(29162900, 'Nascimentos', 90, 1, 5, 1),
+			(29162400, 'Manguinhos', 115, 1, 2, 3),
+			(29162500, 'Goiaba', 89, 6, 5, 3),
+			(29162567, 'Mangueira', 63, 9, 6, 4),
+			(29162908, 'Carambola', 25, 12, 3, 2),
+			(29162123, 'Moraes', 28, 1, 3, 4),
+			(29162456, 'Lado B', 846, 7, 6, 1),
+			(29162109, 'Planalto', 339, 2, 2, 4);
 
 #BAIRRO#
-('Morada'),
-('Barcelona'),
-('Jardim da Penha'),
-('Colina'),
-('São Marcos'),
-('São Lourenço'),
-('Vista do Mestre'),
-('Goiabeiras'),
-('Praia do Canto'),
-('Mangus'),
-('Alphaville'),
-('Campinho'),
-('Planalto'),
-('Jardim Bela Vista'),
-('Macafé');
-
+INSERT INTO bairro(descricao)
+values  ('Morada'),
+		('Barcelona'),
+		('Jardim da Penha'),
+		('Colina'),
+		('São Marcos'),
+		('São Lourenço'),
+		('Vista do Mestre'),
+		('Goiabeiras'),
+		('Praia do Canto'),
+		('Mangus'),
+		('Alphaville'),
+		('Campinho'),
+		('Planalto'),
+		('Jardim Bela Vista'),
+		('Macafé');
 #CIDADE#
-('SERRA'),
+INSERT INTO cidade(descricao)
+values('SERRA'),
 ('VILA VELHA'),
 ('VITÓRIA'),
 ('CARIACICA'),
@@ -93,13 +95,15 @@ INSERT INTO FORMA_CONTATO(celular, email)
 ('VIANA');
 
 #TIPO DE LOGRADOURO#
-('Rua'),
+INSERT INTO tipo_logradouro(descricao)
+values('Rua'),
 ('Alameda'),
 ('Condomínio'),
 ('Avenida');
 
 #ENTREGADOR#
-(16, 1500.00),
+INSERT INTO entregador(fk_pessoa_codigo, salario)
+values (16, 1500.00),
 (17, 2350.00),
 (18, 1000.00),
 (19, 4280.00),
