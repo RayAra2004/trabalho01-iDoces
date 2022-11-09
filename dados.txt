@@ -22,27 +22,29 @@ values 	('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', 1, 1)
 		('willevan', 'will12345', 'Wilsiman Evangelista', '202.202.202-20', 20, 20);
 
 #FORMA DE CONTATO#
-('98181-4344', 'moraesesther25@ifes.com'),
-('99829-6191', 'andradesoso16@ifes.com'),
-('99527-3201', 'raynan.araujo@ifes.com'),
-('99744-5347', 'cadu.barbosa@ifes.com'),
-('99651-7829', 'maminlinda@ifes.com'),
-('99662-3266', 'davisalles@ifes.com'),
-('99205-1225', 'davinunes@ifes.com'),
-('99895-0028', 'harianadami@ifes.com'),
-('98157-4947', 'kauaterra@ifes.com'),
-('99500-0028', 'camsegydio@ifes.com'),
-('99981-7077', 'isabellyandrades@ifes.com'),
-('99504-6166' , 'loretoraes@ifes.com'),
-('99890-5887', 'pedrosoares@ifes.com'),
-('99986-0303', 'barcellosjp@ifes.com'),
-('99737-6136', 'eduardolmo2ifes.com'),
-('99867-7339' , 'marilopes@ifes.com'),
-('99891-9703', 'brunarocha@ifes.com'),
-('99610-7736','caiofg@ifes.com'),
-('99752-4329', 'moises.bode@ifes.com'),
-('99657-0589', 'wilsiman@ifes.com');
 
+INSERT INTO FORMA_CONTATO(celular, email)
+	values 	('98181-4344', 'moraesesther25@ifes.com'),
+			('99829-6191', 'andradesoso16@ifes.com'),
+			('99527-3201', 'raynan.araujo@ifes.com'),
+			('99744-5347', 'cadu.barbosa@ifes.com'),
+			('99651-7829', 'maminlinda@ifes.com'),
+			('99662-3266', 'davisalles@ifes.com'),
+			('99205-1225', 'davinunes@ifes.com'),
+			('99895-0028', 'harianadami@ifes.com'),
+			('98157-4947', 'kauaterra@ifes.com'),
+			('99500-0028', 'camsegydio@ifes.com'),
+			('99981-7077', 'isabellyandrades@ifes.com'),
+			('99504-6166' , 'loretoraes@ifes.com'),
+			('99890-5887', 'pedrosoares@ifes.com'),
+			('99986-0303', 'barcellosjp@ifes.com'),
+			('99737-6136', 'eduardolmo2ifes.com'),
+			('99867-7339' , 'marilopes@ifes.com'),
+			('99891-9703', 'brunarocha@ifes.com'),
+			('99610-7736','caiofg@ifes.com'),
+			('99752-4329', 'moises.bode@ifes.com'),
+			('99657-0589', 'wilsiman@ifes.com');
+			
 #ENDEREÇO#
 (29162200, 'Limoeiro', 12, 1, 1, 2),
 (29162250, 'São José', 13, 7, 2, 3),
