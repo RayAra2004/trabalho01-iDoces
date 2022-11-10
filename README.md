@@ -482,8 +482,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4) OK<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos 
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
+    b) Criar no mínimo 3 consultas com operadores aritméticos ok
+    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas ok
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) OK<br>
     a) Criar outras 5 consultas que envolvam like ou ilike
