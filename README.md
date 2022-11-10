@@ -81,13 +81,13 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 ![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_logico_novo.png?raw=true)
 
 ### 7.	MODELO FÍSICO<br>
-   
-        CREATE TABLE PRODUTO (
-    codigo serial PRIMARY KEY,
-    nome varchar(80),
-    valor float,
-    descricao varchar(250)
-);
+
+	CREATE TABLE PRODUTO (
+		codigo serial PRIMARY KEY,
+	    	nome varchar(80),
+	    	valor float,
+	    	descricao varchar(250)
+	);
 
 CREATE TABLE PAGAMENTO (
     codigo serial PRIMARY KEY,
