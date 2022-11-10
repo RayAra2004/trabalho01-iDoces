@@ -399,8 +399,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			('2022-08-18 15:18:21', 12, 3),
 			('2022-07-18 14:18:13', 13, 5);
 
-
-
 	INSERT INTO CLIENTE_COMPRA(fk_compra_codigo, fk_pessoa_codigo)
 		values	(1, 2),
 			(2, 10),
