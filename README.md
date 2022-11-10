@@ -98,7 +98,6 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 	CREATE TABLE PESSOA (
 	    	codigo serial PRIMARY KEY,
 	    	nome varchar(250),
-	    	telefone varchar(20),
 	    	cpf varchar(14),
 		username varchar(80),
 		senha varchar(80),
