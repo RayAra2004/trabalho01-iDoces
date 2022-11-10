@@ -489,21 +489,21 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
 
-#### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
+#### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6) OK<br>
     a) Criar minimo 3 de exclusão
     b) Criar minimo 3 de atualização
 
-#### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6)<br>
+#### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6) OK<br>
     a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
     b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
 
-#### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
+#### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6) OK<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
 
-#### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
+#### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6) OK<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
