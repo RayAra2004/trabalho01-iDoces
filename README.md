@@ -479,13 +479,13 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 ># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 9.1<br>
 <br>
 
-#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
+#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4) OK<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
     a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
     b) Criar no mínimo 3 consultas com operadores aritméticos 
     c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas
 
-#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
+#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) OK<br>
     a) Criar outras 5 consultas que envolvam like ou ilike
     b) Criar uma consulta para cada tipo de função data apresentada.
 
@@ -500,14 +500,14 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6) OK<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
 
-#### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
+#### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4) OK<br>
     a) Criar minimo 1 de cada tipo
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6) OK<br>
         a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
         b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
 
-#### 9.10	SUBCONSULTAS (Mínimo 4)<br>
+#### 9.10	SUBCONSULTAS (Mínimo 4) OK<br>
      a) Criar minimo 1 envolvendo GROUP BY
      b) Criar minimo 1 envolvendo algum tipo de junção
 
