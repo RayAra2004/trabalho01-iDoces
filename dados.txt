@@ -19,9 +19,9 @@ values 		('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', '2000-0
 		('caiof', 'caca12345', 'Caio Fraga', '181.181.181-18', '2002-12-02', 18, 18),
 		('moises1', 'momo12345', 'Moisés Omena', '191.191.191-19', '1999-01-13', 19, 19),
 		('willevan', 'will12345', 'Wilsiman Evangelista', '202.202.202-20', '1993-09-03', 20, 20),
-		('lyss', 'lyly12345', 'Lyssander Thundermen', '212.212.212-21', '0000-00-00', 2, 21),
+		('lyss', 'lyly12345', 'Lyssander Thundermen', '212.212.212-21', '1986-03-08', 2, 21),
 		('angel', 'gege12345', 'Angelica Silveira', '232.232.232-23', '1981-02-26', 1, 22),
-		('pie', 'baba12345', 'Bárbara Pissarra', '242.242.242-24', '0000-00-00', 2, 23),
+		('pie', 'baba12345', 'Bárbara Pissarra', '242.242.242-24', '1997-12-17', 2, 23),
 		('tininha', 'vava12345', 'Valentina Costa', '252.252.252-25', '1985-02-27', 1, 24);
 
 INSERT INTO FORMA_CONTATO(celular, email)
