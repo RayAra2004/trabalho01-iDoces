@@ -1,3 +1,4 @@
+drop table if exists bairro, cidade, cliente_compra, compra, compra_pagamento, compra_produto, endereco, entregador, forma_contato, pagamento, pessoa, produto, tipo_logradouro, tipo_pagamento cascade;
 
 CREATE TABLE PRODUTO (
     codigo serial PRIMARY KEY,
