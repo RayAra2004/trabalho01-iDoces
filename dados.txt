@@ -175,7 +175,6 @@ INSERT INTO compra(data_hora, fk_pessoa_codigo, fk_entregador_codigo)
 			('2022-11-09 15:18:21', 12, 18),
 			('2022-11-09 14:18:13', 13, 20);
 
-
 INSERT INTO CLIENTE_COMPRA(fk_compra_codigo, fk_pessoa_codigo)
 	values		(1, 2),
 			(2, 10),
