@@ -20,7 +20,9 @@ values 		('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', 1, 1)
 		('moises1', 'momo12345', 'Moisés Omena', '191.191.191-19', 19, 19),
 		('willevan', 'will12345', 'Wilsiman Evangelista', '202.202.202-20', 20, 20),
 		('lyss', 'lyly12345', 'Lyssander Thundermen', '212.212.212-21', 2, 21),
-		('angel', 'gege123455', 'Angelica Silveira', '232.232.232-23', 1, 22);
+		('angel', 'gege12345', 'Angelica Silveira', '232.232.232-23', 1, 22),
+		('pie', 'baba12345', 'Bárbara Pissarra', '242.242.242-24', 2, 23),
+		('tininha', 'vava12345', 'Valentina Costa', '252.252.252-25', 1, 24);
 
 INSERT INTO FORMA_CONTATO(celular, email)
 	values 		('98181-4344', 'moraesesther25@ifes.com'),
@@ -44,7 +46,9 @@ INSERT INTO FORMA_CONTATO(celular, email)
 			('99752-4329', 'moises.bode@ifes.com'),
 			('99657-0589', 'wilsiman@ifes.com')
 			('98838-8919', 'lyssthunder@ifes.com'),
-			('99291-0382', 'angelsilveira@ifes.com');
+			('99291-0382', 'angelsilveira@ifes.com')
+			('99735-8233', 'barbarapissarra@ifes.com'),
+			('99856-8854', 'valencosta@ifes.com');
 			
 INSERT INTO endereco(cep, logradouro, numero, fk_bairro_codigo, fk_cidade_codigo, fk_tipo_logradouro_codigo)
 	values  	(29162200, 'Limoeiro', 12, 1, 1, 2),
