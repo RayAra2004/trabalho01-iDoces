@@ -83,159 +83,160 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
 ### 7.	MODELO FÍSICO<br>
 
-	CREATE TABLE PRODUTO (
-		codigo serial PRIMARY KEY,
-	    	nome varchar(80),
-	    	valor float,
-	    	descricao varchar(250)
-	);
+	drop table if exists bairro, cidade, cliente_compra, compra, compra_pagamento, compra_produto, endereco, entregador, forma_contato, pagamento, pessoa, produto, tipo_logradouro, tipo_pagamento cascade;
 
-	CREATE TABLE PAGAMENTO (
-		codigo serial PRIMARY KEY,
-	    	valor float,
-	    	fk_TIPO_PAGAMENTO_codigo integer
-	);
+CREATE TABLE PRODUTO (
+    codigo serial PRIMARY KEY,
+    nome varchar(80),
+    valor float,
+    descricao varchar(250)
+);
 
-	CREATE TABLE PESSOA (
-	    	codigo serial PRIMARY KEY,
-	    	nome varchar(250),
-	    	cpf varchar(14),
-		data_nascimento date,
-		username varchar(80),
-		senha varchar(80),
-	    	fk_ENDERECO_codigo integer,
-		fk_FORMA_CONTATO_codigo integer
-	);
+CREATE TABLE PAGAMENTO (
+    codigo serial PRIMARY KEY,
+    valor float,
+    fk_TIPO_PAGAMENTO_codigo integer
+);
 
-	CREATE TABLE ENTREGADOR (
-	    	fk_PESSOA_codigo integer,
-		salario float
-	);
+CREATE TABLE PESSOA (
+    codigo serial PRIMARY KEY,
+    nome varchar(250),
+    cpf varchar(14),
+	username varchar(80),
+	senha varchar(80),
+	data_nascimento date,
+    fk_ENDERECO_codigo integer,
+	fk_FORMA_CONTATO_codigo integer
+);
 
-	CREATE TABLE COMPRA (
-	    	codigo serial PRIMARY KEY,
-		data_hora timestamp,
-	    	fk_ENTREGADOR_codigo integer,
-	    	fk_PESSOA_codigo integer
-	);
+CREATE TABLE ENTREGADOR (
+    fk_PESSOA_codigo integer,
+	salario float
+);
 
-	CREATE TABLE TIPO_PAGAMENTO (
-	    	codigo serial NOT NULL PRIMARY KEY,
-	    	descricao varchar(80)
-	);
+CREATE TABLE COMPRA (
+    codigo serial PRIMARY KEY,
+	data_hora timestamp,
+    fk_ENTREGADOR_codigo integer,
+    fk_PESSOA_codigo integer
+);
 
-	CREATE TABLE ENDERECO (
-	    	cep bigint,
-	    	logradouro varchar(255),
-	    	numero integer,
-	    	fk_BAIRRO_codigo integer,
-	    	fk_CIDADE_codigo integer,
-	    	fk_TIPO_LOGRADOURO_codigo integer,
-	    	codigo serial PRIMARY KEY
-	);
+CREATE TABLE TIPO_PAGAMENTO (
+    codigo serial NOT NULL PRIMARY KEY,
+    descricao varchar(80)
+);
 
-	CREATE TABLE COMPRA_PRODUTO (
-	    	qtd integer,
-	    	fk_PRODUTO_codigo integer,
-	    	fk_COMPRA_codigo integer
-	);
+CREATE TABLE ENDERECO (
+    cep bigint,
+    logradouro varchar(255),
+    numero integer,
+    fk_BAIRRO_codigo integer,
+    fk_CIDADE_codigo integer,
+    fk_TIPO_LOGRADOURO_codigo integer,
+    codigo serial PRIMARY KEY
+);
 
-	CREATE TABLE BAIRRO (
-	    	codigo serial PRIMARY KEY,
-	    	descricao varchar(80)
-	);
+CREATE TABLE COMPRA_PRODUTO (
+    qtd integer,
+    fk_PRODUTO_codigo integer,
+    fk_COMPRA_codigo integer
+);
 
-	CREATE TABLE CIDADE (
-	    	codigo serial PRIMARY KEY,
-	    	descricao varchar(80)
-	);
+CREATE TABLE BAIRRO (
+    codigo serial PRIMARY KEY,
+    descricao varchar(80)
+);
 
-	CREATE TABLE TIPO_LOGRADOURO (
-	    	codigo serial PRIMARY KEY,
-	    	descricao varchar(80)
-	);
+CREATE TABLE CIDADE (
+    codigo serial PRIMARY KEY,
+    descricao varchar(80)
+);
 
-	CREATE TABLE FORMA_CONTATO (
-	    	codigo serial PRIMARY KEY,
-	   	celular varchar(20),
-		email varchar(100)
-	);
+CREATE TABLE TIPO_LOGRADOURO (
+    codigo serial PRIMARY KEY,
+    descricao varchar(80)
+);
 
-	CREATE TABLE CLIENTE_COMPRA (
-	    	fk_COMPRA_codigo integer,
-		fk_PESSOA_codigo integer
-	);
+CREATE TABLE FORMA_CONTATO (
+    codigo serial PRIMARY KEY,
+    celular varchar(20),
+	email varchar(100)
+);
 
-	CREATE TABLE COMPRA_PAGAMENTO (
-	    	fk_COMPRA_codigo integer,
-		fk_PAGAMENTO_codigo integer
-	);
+CREATE TABLE CLIENTE_COMPRA (
+    fk_COMPRA_codigo integer,
+	fk_PESSOA_codigo integer
+);
 
-	ALTER TABLE PESSOA ADD CONSTRAINT FK_PESSOA_ENDERECO
-	FOREIGN KEY (fk_endereco_codigo)
-	REFERENCES endereco (codigo);
+CREATE TABLE COMPRA_PAGAMENTO (
+    fk_COMPRA_codigo integer,
+	fk_PAGAMENTO_codigo integer
+);
 
-	ALTER TABLE PESSOA ADD CONSTRAINT FK_PESSOA_FORMA_CONTATO
-	FOREIGN KEY (fk_forma_contato_codigo)
-	REFERENCES forma_contato (codigo);
+ALTER TABLE PESSOA ADD CONSTRAINT FK_PESSOA_ENDERECO
+    FOREIGN KEY (fk_endereco_codigo)
+    REFERENCES endereco (codigo);
 
-	ALTER TABLE ENTREGADOR ADD CONSTRAINT FK_ENTREGADOR_PESSOA
-   	FOREIGN KEY (fk_pessoa_codigo)
-    	REFERENCES PESSOA (codigo);
+ALTER TABLE PESSOA ADD CONSTRAINT FK_PESSOA_FORMA_CONTATO
+    FOREIGN KEY (fk_forma_contato_codigo)
+    REFERENCES forma_contato (codigo);
+ 
+ALTER TABLE ENTREGADOR ADD CONSTRAINT FK_ENTREGADOR_PESSOA
+    FOREIGN KEY (fk_pessoa_codigo)
+    REFERENCES PESSOA (codigo);
 
-	ALTER TABLE PAGAMENTO ADD CONSTRAINT FK_PAGAMENTO_TIPO_PAGAMENTO
-	FOREIGN KEY (fk_tipo_pagamento_codigo)
-	REFERENCES tipo_pagamento (codigo);
+ALTER TABLE PAGAMENTO ADD CONSTRAINT FK_PAGAMENTO_TIPO_PAGAMENTO
+    FOREIGN KEY (fk_tipo_pagamento_codigo)
+    REFERENCES tipo_pagamento (codigo);
+ 
+ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_ENTREGADOR
+    FOREIGN KEY (fk_entregador_codigo)
+    REFERENCES PESSOA (codigo);
 
-	ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_ENTREGADOR
-	FOREIGN KEY (fk_entregador_codigo)
-	REFERENCES PESSOA (codigo);
+ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_PESSOA
+    FOREIGN KEY (fk_pessoa_codigo)
+    REFERENCES PESSOA (codigo);
 
-	ALTER TABLE COMPRA ADD CONSTRAINT FK_COMPRA_PESSOA
-	FOREIGN KEY (fk_pessoa_codigo)
-	REFERENCES PESSOA (codigo);
+ALTER TABLE endereco ADD CONSTRAINT FK_endereco_BAIRRO
+    FOREIGN KEY (fk_bairro_codigo)
+    REFERENCES BAIRRO (codigo);
 
-	ALTER TABLE endereco ADD CONSTRAINT FK_endereco_BAIRRO
-	FOREIGN KEY (fk_bairro_codigo)
-	REFERENCES BAIRRO (codigo);
+ALTER TABLE endereco ADD CONSTRAINT FK_endereco_CIDADE
+    FOREIGN KEY (fk_cidade_codigo)
+    REFERENCES CIDADE (codigo);
 
-	ALTER TABLE endereco ADD CONSTRAINT FK_endereco_CIDADE
-	FOREIGN KEY (fk_cidade_codigo)
-	REFERENCES CIDADE (codigo);
+ALTER TABLE endereco ADD CONSTRAINT FK_endereco_TIPO_LOGRADOURO
+    FOREIGN KEY (fk_tipo_logradouro_codigo)
+    REFERENCES TIPO_LOGRADOURO (codigo);
 
-	ALTER TABLE endereco ADD CONSTRAINT FK_endereco_TIPO_LOGRADOURO
-	FOREIGN KEY (fk_tipo_logradouro_codigo)
-	REFERENCES TIPO_LOGRADOURO (codigo);
+ALTER TABLE CLIENTE_COMPRA ADD CONSTRAINT FK_CLIENTE_COMPRA_COMPRA
+    FOREIGN KEY (fk_compra_codigo)
+    REFERENCES COMPRA (codigo);
+ 
+ALTER TABLE CLIENTE_COMPRA ADD CONSTRAINT FK_CLIENTE_COMPRA_CLIENTE
+    FOREIGN KEY (fk_pessoa_codigo)
+    REFERENCES PESSOA (codigo);
+ 
+ALTER TABLE compra_produto ADD CONSTRAINT FK_Compra_produto_PRODUTO
+    FOREIGN KEY (fk_PRODUTO_codigo)
+    REFERENCES PRODUTO (codigo);
+ 
+ALTER TABLE compra_produto ADD CONSTRAINT FK_Compra_produto_COMPRA
+    FOREIGN KEY (fk_COMPRA_codigo)
+    REFERENCES COMPRA (codigo);
 
-	ALTER TABLE CLIENTE_COMPRA ADD CONSTRAINT FK_CLIENTE_COMPRA_COMPRA
-	FOREIGN KEY (fk_compra_codigo)
-	REFERENCES COMPRA (codigo);
-
-	ALTER TABLE CLIENTE_COMPRA ADD CONSTRAINT FK_CLIENTE_COMPRA_CLIENTE
-	FOREIGN KEY (fk_pessoa_codigo)
-	REFERENCES PESSOA (codigo);
-
-	ALTER TABLE compra_produto ADD CONSTRAINT FK_Compra_produto_PRODUTO
-	FOREIGN KEY (fk_PRODUTO_codigo)
-	REFERENCES PRODUTO (codigo);
-
-	ALTER TABLE compra_produto ADD CONSTRAINT FK_Compra_produto_COMPRA
-	FOREIGN KEY (fk_COMPRA_codigo)
-	REFERENCES COMPRA (codigo);
-
-	ALTER TABLE compra_pagamento ADD CONSTRAINT Fk_COMPRA_PAGAMENTO_COMPRA
-	FOREIGN KEY (fk_compra_codigo)
-	REFERENCES COMPRA (codigo);
-
-	ALTER TABLE compra_pagamento ADD CONSTRAINT Fk_COMPRA_PAGAMENTO_PAGAMENTO
-	FOREIGN KEY (fk_pagamento_codigo)
-	REFERENCES PAGAMENTO (codigo);
+ALTER TABLE compra_pagamento ADD CONSTRAINT Fk_COMPRA_PAGAMENTO_COMPRA
+    FOREIGN KEY (fk_compra_codigo)
+    REFERENCES COMPRA (codigo);
+ 
+ALTER TABLE compra_pagamento ADD CONSTRAINT Fk_COMPRA_PAGAMENTO_PAGAMENTO
+    FOREIGN KEY (fk_pagamento_codigo)
+    REFERENCES PAGAMENTO (codigo);
 
 ### 8.	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-           
 
-	INSERT INTO PESSOA(username, senha, nome, cpf, data_nascimento, fk_endereco_codigo, fk_FORMA_CONTATO_codigo)
-		values 	('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', '2000-04-25', 1, 1),
+INSERT INTO PESSOA(username, senha, nome, cpf, data_nascimento, fk_endereco_codigo, fk_FORMA_CONTATO_codigo)
+	values 		('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', '2000-04-25', 1, 1),
 			('andradesoso', 'soso12345', 'Sofia Andrade', '111.111.111-11', '2000-01-28', 2, 2),
 			('rayara9', 'ray12345', 'Raynan Araujo', '222.222.222-22', '2004-07-09', 3, 3),
 			('caduchato', 'caca12345', 'Carlos Eduardo Barbosa', '333.333.333-33', '1998-05-02', 4, 4),
@@ -260,8 +261,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			('pie', 'baba12345', 'Bárbara Pissarra', '242.242.242-24', '1997-12-17', 2, 23),
 			('tininha', 'vava12345', 'Valentina Costa', '252.252.252-25', '1985-02-27', 1, 24);
 
-	INSERT INTO FORMA_CONTATO(celular, email)
-		values 	('98181-4344', 'moraesesther25@ifes.com'),
+INSERT INTO FORMA_CONTATO(celular, email)
+	values 		('98181-4344', 'moraesesther25@ifes.com'),
 			('99829-6191', 'andradesoso16@ifes.com'),
 			('99527-3201', 'raynan.araujo@ifes.com'),
 			('99744-5347', 'cadu.barbosa@ifes.com'),
@@ -280,14 +281,14 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			('99891-9703', 'brunarocha@ifes.com'),
 			('99610-7736','caiofg@ifes.com'),
 			('99752-4329', 'moises.bode@ifes.com'),
-			('99657-0589', 'wilsiman@ifes.com')
+			('99657-0589', 'wilsiman@ifes.com'),
 			('98838-8919', 'lyssthunder@ifes.com'),
-			('99291-0382', 'angelsilveira@ifes.com')
+			('99291-0382', 'angelsilveira@ifes.com'),
 			('99735-8233', 'barbarapissarra@ifes.com'),
 			('99856-8854', 'valencosta@ifes.com');
 			
-	INSERT INTO endereco(cep, logradouro, numero, fk_bairro_codigo, fk_cidade_codigo, fk_tipo_logradouro_codigo)
-		values  (29162200, 'Limoeiro', 12, 1, 1, 2),
+INSERT INTO endereco(cep, logradouro, numero, fk_bairro_codigo, fk_cidade_codigo, fk_tipo_logradouro_codigo)
+	values  	(29162200, 'Limoeiro', 12, 1, 1, 2),
 			(29162250, 'São José', 13, 7, 2, 3),
 			(29162219, 'Corsanto', 22, 1, 3, 1),
 			(29162222, 'Laranjeiras', 14, 2, 6, 1),
@@ -308,8 +309,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			(29162456, 'Lado B', 846, 7, 6, 1),
 			(29162109, 'Planalto', 339, 2, 2, 4);
 			
-	INSERT INTO bairro(descricao)
-		values  ('Morada'),
+INSERT INTO bairro(descricao)
+	values  	('Morada'),
 			('Barcelona'),
 			('Jardim da Penha'),
 			('Colina'),
@@ -323,31 +324,34 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			('Campinho'),
 			('Planalto'),
 			('Jardim Bela Vista'),
-			('Macafé');
+			('Macafé'),
+			('Cobilândia'),
+			('Porto de Santana'),
+			('Rio Marinho');
 		
-	INSERT INTO cidade(descricao)
-		values	('SERRA'),
+INSERT INTO cidade(descricao)
+	values		('SERRA'),
 			('VILA VELHA'),
 			('VITÓRIA'),
 			('CARIACICA'),
 			('FUNDÃO'),
 			('VIANA');
 
-	INSERT INTO tipo_logradouro(descricao)
-		values	('Rua'),
+INSERT INTO tipo_logradouro(descricao)
+	values		('Rua'),
 			('Alameda'),
 			('Condomínio'),
 			('Avenida');
 
-	INSERT INTO entregador(fk_pessoa_codigo, salario)
-		values 	(16, 1500.00),
+INSERT INTO entregador(fk_pessoa_codigo, salario)
+	values 		(16, 1500.00),
 			(17, 2350.00),
 			(18, 1000.00),
 			(19, 4280.00),
 			(20, 1200.00);
 
-	INSERT INTO produto(nome, valor, descricao)
-		values	('Bolo de chocolate', 8.00, 'Bolo de chocolate belga, vendido em fatias'),
+INSERT INTO produto(nome, valor, descricao)
+	values		('Bolo de chocolate', 8.00, 'Bolo de chocolate belga, vendido em fatias'),
 			('Pote da felicidade', 13.00, 'Pote da felicidade (brownie com morango, ninho com Nutella, Ouro Branco)'),
 			('Cone', 10.00, 'Cone de ninho trufado'),
 			('Brownie', 6.00, 'Brownie tradicional 6cmx6cm'),
@@ -366,9 +370,9 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			('Cheesecake', 22.00, 'Casquinha de biscoito crocante e um recheio à base de cream cheese, coberto com geleia de morangos frescos.'),
 			('Bolo de Red Velvet', 12.00, 'Bolo de textura muito leve e macia, levemente amanteigado e com um discreto sabor a chocolate, vendido em fatias'),
 			('Cocada', 3.00, 'Doce à base de coco');
-			
-	INSERT INTO compra_produto(qtd, fk_produto_codigo, fk_compra_codigo)
-		values	(3, 1, 1),
+
+INSERT INTO compra_produto(qtd, fk_produto_codigo, fk_compra_codigo)
+	values		(3, 1, 1),
 			(10, 2, 2),
 			(1, 3, 3),
 			(15, 4, 4),
@@ -389,8 +393,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			(1, 4, 19),
 			(3, 5, 20);
 
-	INSERT INTO compra(data_hora, fk_pessoa_codigo, fk_entregador_codigo)
-		values	('2022-11-10 14:01:12', 2, 20),
+INSERT INTO compra(data_hora, fk_pessoa_codigo, fk_entregador_codigo)
+	values		('2022-11-10 14:01:12', 2, 20),
 			('2022-10-22 15:03:13', 10, 16),
 			('2022-08-11 11:10:11', 1, 18),
 			('2022-01-12 12:12:14', 4, 17),
@@ -410,9 +414,9 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			('2022-10-24 20:25:18', 14, 17),
 			('2022-11-09 15:18:21', 12, 18),
 			('2022-11-09 14:18:13', 13, 20);
-			
-	INSERT INTO CLIENTE_COMPRA(fk_compra_codigo, fk_pessoa_codigo)
-		values	(1, 2),
+
+INSERT INTO CLIENTE_COMPRA(fk_compra_codigo, fk_pessoa_codigo)
+	values		(1, 2),
 			(2, 10),
 			(3, 1),
 			(4, 4),
@@ -433,8 +437,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			(19, 12),
 			(20, 13);
 
-	INSERT INTO PAGAMENTO(valor, fk_tipo_pagamento_codigo)
-		values	(24, 1),
+INSERT INTO PAGAMENTO(valor, fk_tipo_pagamento_codigo)
+	values		(24, 1),
 			(130, 5),
 			(10, 2),
 			(90, 3),
@@ -455,8 +459,8 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			(6, 2),
 			(22.5, 3);
 
-	INSERT INTO COMPRA_PAGAMENTO(fk_pagamento_codigo, fk_compra_codigo)
-		values	(1, 1),
+INSERT INTO COMPRA_PAGAMENTO(fk_pagamento_codigo, fk_compra_codigo)
+	values		(1, 1),
 			(2, 2),
 			(3, 3),
 			(4, 4),
@@ -477,13 +481,14 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 			(19, 19),
 			(20, 20);
 
-	INSERT INTO tipo_pagamento(descricao)
-		values	('PIX'),
+INSERT INTO tipo_pagamento(descricao)
+	values		('PIX'),
 			('PIC PAY'),
 			('DINHEIRO'),
 			('CARTÃO DÉBITO'),
-			('CARTÃO CRÉDITO')
-			('CHEQUE');        
+			('CARTÃO CRÉDITO'),
+			('CHEQUE');
+   
          
 
 ### 9.	TABELAS E PRINCIPAIS CONSULTAS<br>
