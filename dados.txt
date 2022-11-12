@@ -246,5 +246,5 @@ INSERT INTO tipo_pagamento(descricao)
 			('PIC PAY'),
 			('DINHEIRO'),
 			('CARTÃO DÉBITO'),
-			('CARTÃO CRÉDITO')
+			('CARTÃO CRÉDITO'),
 			('CHEQUE');
