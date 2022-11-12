@@ -36,7 +36,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
  ### 5. MODELO CONCEITUAL<br>
         
-![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_conceitual_novo.png?raw=true)      
+![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_conceitual.png?raw=true)      
     
 #### 5.1 Validação do Modelo Conceitual
     [Grupo01]: [Camila Egydio, Davi Nunes, Isabelly Andrades e Yasmin Santana]
@@ -79,7 +79,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
   <br>
 
 ### 6. MODELO LÓGICO<br>
-![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_logico_novo.png?raw=true)
+![Alt text](https://github.com/RayAra2004/trabalho01-iDoces/blob/main/modelo_logico.png?raw=true)
 
 ### 7.	MODELO FÍSICO<br>
 
