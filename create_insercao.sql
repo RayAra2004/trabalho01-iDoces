@@ -19,6 +19,7 @@ CREATE TABLE PESSOA (
     cpf varchar(14),
 	username varchar(80),
 	senha varchar(80),
+	data_nascimento date,
     fk_ENDERECO_codigo integer,
 	fk_FORMA_CONTATO_codigo integer
 );
@@ -87,30 +88,34 @@ CREATE TABLE COMPRA_PAGAMENTO (
 	fk_PAGAMENTO_codigo integer
 );
 
-INSERT INTO PESSOA(username, senha, nome, cpf, fk_endereco_codigo,fk_FORMA_CONTATO_codigo)
-values 	('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', 1, 1),
-		('andradesoso', 'soso12345', 'Sofia Andrade', '111.111.111-11', 2, 2),
-		('rayara9', 'ray12345', 'Raynan Araujo', '222.222.222-22', 3, 3),
-		('caduchato', 'caca12345', 'Carlos Eduardo Barbosa', '333.333.333-33', 4, 4),
-		('maminlinda', 'mamin12345', 'Yasmin Santana', '444.444.444-44', 5, 5),
-		('david', 'dada12345', 'Davi Salles', '555.555.555-55', 6, 6),
-		('emonunes', 'emo12345', 'Davi Nunes', '666.666.666-66', 7, 7),
-		('ariel', 'haha12345', 'Harian Adami', '777.777.777-77',8, 8),
-		('kamabate', 'kaka12345', 'Kauã Mateus Terra', '888.888.888-88',9, 9),
-		('camsmila', 'caca12345', 'Camila Egydio', '999.999.999-99', 10, 10), 
-		('isybelly', 'bebel12345', 'Isabelly Andrades', '101.101.101-10', 11, 11),
-		('loret', 'lolo12345', 'Lorena Toraes', '121.121.121-12', 12, 12),
-		('pedinho', 'pepe12345', 'Pedro Ramos', '131.131.131-13', 13, 13),
-		('jpbarcellos', 'jpjp12345', 'João Pedro Barcellos', '141.141.141-14', 14, 14),
-		('eduolmo', 'dudu12345', 'Eduardo Olmo', '151.151.151-15', 15, 15),
-		('marilopes', 'mama12345', 'Mariana Lopes', '161.161.161-16', 16, 16),
-		('brugms', 'bubu12345', 'Bruna Gomes', '171.171.171-17', 17, 17),
-		('caiof', 'caca12345', 'Caio Fraga', '181.181.181-18', 18, 18),
-		('moises1', 'momo12345', 'Moisés Omena', '191.191.191-19', 19, 19),
-		('willevan', 'will12345', 'Wilsiman Evangelista', '202.202.202-20', 20, 20);
+INSERT INTO PESSOA(username, senha, nome, cpf, data_nascimento, fk_endereco_codigo, fk_FORMA_CONTATO_codigo)
+	values 		('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', '2000-04-25', 1, 1),
+			('andradesoso', 'soso12345', 'Sofia Andrade', '111.111.111-11', '2000-01-28', 2, 2),
+			('rayara9', 'ray12345', 'Raynan Araujo', '222.222.222-22', '2004-07-09', 3, 3),
+			('caduchato', 'caca12345', 'Carlos Eduardo Barbosa', '333.333.333-33', '1998-05-02', 4, 4),
+			('maminlinda', 'mamin12345', 'Yasmin Santana', '444.444.444-44', '2000-03-08', 5, 5),
+			('david', 'dada12345', 'Davi Salles', '555.555.555-55', '1995-03-18', 6, 6),
+			('emonunes', 'emo12345', 'Davi Nunes', '666.666.666-66', '1998-07-27',7, 7),
+			('ariel', 'haha12345', 'Harian Adami', '777.777.777-77', '1995-03-19',8, 8),
+			('kamabate', 'kaka12345', 'Kauã Mateus Terra', '888.888.888-88', '2003-12-27', 9, 9),
+			('camsmila', 'caca12345', 'Camila Egydio', '999.999.999-99', '2001-04-14', 10, 10), 
+			('isybelly', 'bebel12345', 'Isabelly Andrades', '101.101.101-10', '2001-03-08', 11, 11),
+			('loret', 'lolo12345', 'Lorena Toraes', '121.121.121-12', '2004-08-24', 12, 12),
+			('pedinho', 'pepe12345', 'Pedro Ramos', '131.131.131-13', '1996-09-02', 13, 13),
+			('jpbarcellos', 'jpjp12345', 'João Pedro Barcellos', '141.141.141-14', '1991-11-15', 14, 14),
+			('eduolmo', 'dudu12345', 'Eduardo Olmo', '151.151.151-15', '1955-10-21', 15, 15),
+			('marilopes', 'mama12345', 'Mariana Lopes', '161.161.161-16', '2004-04-21', 16, 16),
+			('brugms', 'bubu12345', 'Bruna Gomes', '171.171.171-17', '1990-06-12', 17, 17),
+			('caiof', 'caca12345', 'Caio Fraga', '181.181.181-18', '2002-12-02', 18, 18),
+			('moises1', 'momo12345', 'Moisés Omena', '191.191.191-19', '1999-01-13', 19, 19),
+			('willevan', 'will12345', 'Wilsiman Evangelista', '202.202.202-20', '1993-09-03', 20, 20),
+			('lyss', 'lyly12345', 'Lyssander Thundermen', '212.212.212-21', '1986-03-08', 2, 21),
+			('angel', 'gege12345', 'Angelica Silveira', '232.232.232-23', '1981-02-26', 1, 22),
+			('pie', 'baba12345', 'Bárbara Pissarra', '242.242.242-24', '1997-12-17', 2, 23),
+			('tininha', 'vava12345', 'Valentina Costa', '252.252.252-25', '1985-02-27', 1, 24);
 
 INSERT INTO FORMA_CONTATO(celular, email)
-	values 	('98181-4344', 'moraesesther25@ifes.com'),
+	values 		('98181-4344', 'moraesesther25@ifes.com'),
 			('99829-6191', 'andradesoso16@ifes.com'),
 			('99527-3201', 'raynan.araujo@ifes.com'),
 			('99744-5347', 'cadu.barbosa@ifes.com'),
@@ -129,10 +134,14 @@ INSERT INTO FORMA_CONTATO(celular, email)
 			('99891-9703', 'brunarocha@ifes.com'),
 			('99610-7736','caiofg@ifes.com'),
 			('99752-4329', 'moises.bode@ifes.com'),
-			('99657-0589', 'wilsiman@ifes.com');
+			('99657-0589', 'wilsiman@ifes.com'),
+			('98838-8919', 'lyssthunder@ifes.com'),
+			('99291-0382', 'angelsilveira@ifes.com'),
+			('99735-8233', 'barbarapissarra@ifes.com'),
+			('99856-8854', 'valencosta@ifes.com');
 			
 INSERT INTO endereco(cep, logradouro, numero, fk_bairro_codigo, fk_cidade_codigo, fk_tipo_logradouro_codigo)
-	values  (29162200, 'Limoeiro', 12, 1, 1, 2),
+	values  	(29162200, 'Limoeiro', 12, 1, 1, 2),
 			(29162250, 'São José', 13, 7, 2, 3),
 			(29162219, 'Corsanto', 22, 1, 3, 1),
 			(29162222, 'Laranjeiras', 14, 2, 6, 1),
@@ -154,7 +163,7 @@ INSERT INTO endereco(cep, logradouro, numero, fk_bairro_codigo, fk_cidade_codigo
 			(29162109, 'Planalto', 339, 2, 2, 4);
 			
 INSERT INTO bairro(descricao)
-	values  ('Morada'),
+	values  	('Morada'),
 			('Barcelona'),
 			('Jardim da Penha'),
 			('Colina'),
@@ -171,7 +180,7 @@ INSERT INTO bairro(descricao)
 			('Macafé');
 		
 INSERT INTO cidade(descricao)
-	values	('SERRA'),
+	values		('SERRA'),
 			('VILA VELHA'),
 			('VITÓRIA'),
 			('CARIACICA'),
@@ -179,20 +188,20 @@ INSERT INTO cidade(descricao)
 			('VIANA');
 
 INSERT INTO tipo_logradouro(descricao)
-	values	('Rua'),
+	values		('Rua'),
 			('Alameda'),
 			('Condomínio'),
 			('Avenida');
 
 INSERT INTO entregador(fk_pessoa_codigo, salario)
-	values 	(16, 1500.00),
+	values 		(16, 1500.00),
 			(17, 2350.00),
 			(18, 1000.00),
 			(19, 4280.00),
 			(20, 1200.00);
 
 INSERT INTO produto(nome, valor, descricao)
-	values	('Bolo de chocolate', 8.00, 'Bolo de chocolate belga, vendido em fatias'),
+	values		('Bolo de chocolate', 8.00, 'Bolo de chocolate belga, vendido em fatias'),
 			('Pote da felicidade', 13.00, 'Pote da felicidade (brownie com morango, ninho com Nutella, Ouro Branco)'),
 			('Cone', 10.00, 'Cone de ninho trufado'),
 			('Brownie', 6.00, 'Brownie tradicional 6cmx6cm'),
@@ -208,10 +217,12 @@ INSERT INTO produto(nome, valor, descricao)
 			('Banoffee', 16.00, 'Torta feita de bananas, creme e uma calda de caramelo, com sua base de biscoitos. Vendido a fatia'),
 			('Torta de Ninho com Nutella', 15.00, 'Torta feita com massa de leite ninho recheado de nutella. Vendido a fatia'),
 			('Cucuz doce', 4.50, 'Feito a base de tapioca junto a coco fresco ralado e leite condensado'),
-			('Cheesecake', 22.00, 'Casquinha de biscoito crocante e um recheio à base de cream cheese, coberto com geleia de morangos frescos.');
+			('Cheesecake', 22.00, 'Casquinha de biscoito crocante e um recheio à base de cream cheese, coberto com geleia de morangos frescos.'),
+			('Bolo de Red Velvet', 12.00, 'Bolo de textura muito leve e macia, levemente amanteigado e com um discreto sabor a chocolate, vendido em fatias'),
+			('Cocada', 3.00, 'Doce à base de coco');
 
 INSERT INTO compra_produto(qtd, fk_produto_codigo, fk_compra_codigo)
-	values	(3, 1, 1),
+	values		(3, 1, 1),
 			(10, 2, 2),
 			(1, 3, 3),
 			(15, 4, 4),
@@ -233,31 +244,29 @@ INSERT INTO compra_produto(qtd, fk_produto_codigo, fk_compra_codigo)
 			(3, 5, 20);
 
 INSERT INTO compra(data_hora, fk_pessoa_codigo, fk_entregador_codigo)
-	values	('2022-09-13 14:01:12', 2, 5),
+	values		('2022-11-10 14:01:12', 2, 20),
 			('2022-10-22 15:03:13', 10, 16),
 			('2022-08-11 11:10:11', 1, 18),
 			('2022-01-12 12:12:14', 4, 17),
 			('2022-10-17 15:02:15', 3, 17),
-			('2022-10-15 12:03:16', 11, 19),
+			('2022-11-08 12:03:16', 11, 19),
 			('2022-07-11 16:04:11', 3, 16),
 			('2022-09-11 16:05:14', 8, 17),
-			('2022-09-12 16:17:10', 6, 18),
+			('2022-11-11 16:17:10', 6, 18),
 			('2022-10-10 18:22:10', 9, 19),
 			('2022-09-21 19:23:11', 5, 20),
-			('2022-04-28 10:13:00', 1, 20),
+			('2022-11-07 10:13:00', 1, 20),
 			('2022-09-03 16:40:21', 15, 17),
 			('2022-10-08 13:00:44', 6, 18),
 			('2022-10-27 14:08:00', 14, 16),
-			('2022-10-21 16:28:11', 15, 16),
+			('2022-11-10 16:28:11', 15, 16),
 			('2022-10-25 18:29:33', 7, 19),
 			('2022-10-24 20:25:18', 14, 17),
-			('2022-08-18 15:18:21', 12, 18),
-			('2022-07-18 14:18:13', 13, 20);
-
-
+			('2022-11-09 15:18:21', 12, 18),
+			('2022-11-09 14:18:13', 13, 20);
 
 INSERT INTO CLIENTE_COMPRA(fk_compra_codigo, fk_pessoa_codigo)
-	values	(1, 2),
+	values		(1, 2),
 			(2, 10),
 			(3, 1),
 			(4, 4),
@@ -279,7 +288,7 @@ INSERT INTO CLIENTE_COMPRA(fk_compra_codigo, fk_pessoa_codigo)
 			(20, 13);
 
 INSERT INTO PAGAMENTO(valor, fk_tipo_pagamento_codigo)
-	values	(24, 1),
+	values		(24, 1),
 			(130, 5),
 			(10, 2),
 			(90, 3),
@@ -301,7 +310,7 @@ INSERT INTO PAGAMENTO(valor, fk_tipo_pagamento_codigo)
 			(22.5, 3);
 
 INSERT INTO COMPRA_PAGAMENTO(fk_pagamento_codigo, fk_compra_codigo)
-	values	(1, 1),
+	values		(1, 1),
 			(2, 2),
 			(3, 3),
 			(4, 4),
@@ -323,11 +332,12 @@ INSERT INTO COMPRA_PAGAMENTO(fk_pagamento_codigo, fk_compra_codigo)
 			(20, 20);
 
 INSERT INTO tipo_pagamento(descricao)
-	values	('PIX'),
+	values		('PIX'),
 			('PIC PAY'),
 			('DINHEIRO'),
 			('CARTÃO DÉBITO'),
-			('CARTÃO CRÉDITO');
+			('CARTÃO CRÉDITO'),
+			('CHEQUE');
 
 ALTER TABLE PESSOA ADD CONSTRAINT FK_PESSOA_ENDERECO
     FOREIGN KEY (fk_endereco_codigo)
