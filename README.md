@@ -498,36 +498,91 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 <br>
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4) OK<br>
+	1- Objetivo: Visualizar os produtos através do seu valor, dentro de uma faixa de preço específica (Entre 7 e 20 no exemplo).
+	2- Objetivo: Visualizar os entregadores através do seu salário, sendo ele superior ou inferior a algum valor específico (Valor de 2000 reais no exemplo).
+	3- Objetivo: Visualizar os produtos de acordo com a menor venda dele em relação à uma quantidade específica de vendas (5 vendas no exemplo).
+	4- Objetivo: Visualizar as cidades de acordo com a menor quantidade de pedidos daquela região, em relação à uma quantidade específica (10 pedidos no exemplo).
+	
+
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E TABELAS OU CAMPOS RENOMEADOS (Mínimo 11)
-    a) Criar 5 consultas que envolvam os operadores lógicos AND, OR e Not
-    b) Criar no mínimo 3 consultas com operadores aritméticos ok
-    c) Criar no mínimo 3 consultas com operação de renomear nomes de campos ou tabelas ok
+	1- Objetivo: Calcular e visualizar o bônus em conjunto ao salário do entregador de acordo com seu desempenho, sendo o bônus consequência de entregadores que possuem o número de entregas superior a 3.
+	2- Objetivo: Calcular e visualizar um desconto de x% para produtos com o valor > x, no exemplo 70% quando o produto for maior que 20 reais.
+ 	3- Objetivo: Calcular e visualizar o desconto em conjunto ao valor dos produtos de acordo com sua demanda, sendo o desconto consequência de produtos menos procurados, que possuem a quantidade de vezes comprados de 7.
+ 	4- Objetivo: Visualizar os clientes que mais compram (os que compram mais de 2 vezes), considerando-os como "fiéis".
+ 	5- Objetivo: Visualizar as pessoas que moram na mesma cidade e no mesmo tipo de logradouro para uma facilitação das entregas.
+	6- Objetivo: Visualizar produtos que possuem a mesma quantidade e forma de pagamento.
+	7- Objetivo: Cidades com a quantidade de compras maior que 3.
+	8- Objetivo: Visualizar as compras com uma data maior que 20.
+ 	9- Objetivo: Renomear e visualizar fk_cod_pessoa para cod entregador, a partir do momento que ele é identificado como entregador, pois proporciona melhor entendimento da tabela, ficando claro as pessoas que são clientes e entregadores.
+        10- Objetivo: Renomear e visualizar qtd para quantidade, pois proporciona melhor entendimento da tabela, ficando claro que se refere a quantidade.
+	11- Objetivo: Renomear e visualizar descrição para tipo de pagamento, pois proporciona melhor entendimento da tabela.
+
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) OK<br>
-    a) Criar outras 5 consultas que envolvam like ou ilike
-    b) Criar uma consulta para cada tipo de função data apresentada.
+	1- Objetivo: Mostrar uma tabela com todas as pessoas que começam com a letra "M".
+	2- Objetivo: Mostrar uma tabela com todos os bairros que começam com a letra "B".
+	3- Objetivo: Mostrar uma tabela com todas as cidades que começam com a letra "C".
+	4- Objetivo: Mostrar uma tabela com todos os logradouros que começam com a letra "L".
+	5- Objetivo: Mostrar uma tabela com todos os entregadores que começam com a letra "M".
+	6- Objetivo: Mostrar uma tabela com todos os produtos que começam com a letra "P".
+	7- Objetivo: Mostrar uma tabela com a quantidade de entregas dos entregadores em um determinado mês.
+	8- Objetivo: Mostrar uma tabela com as idades dos nossos entregadores.
+	9- Objetivo: Mostrar uma tabela referente a promoção e cliente(que toda vez que o cliente faz aniversário ele ganha uma promoção) sendo assim o principal objetivo deste relatório é mostrar quantas promoções já foram feitas.
+	10- Objetivo: Mostrar uma tabela com o relatório de vendas no horário de pico.
+	11- Objetivo: Mostrar uma tabela com o relatório de vendas do último mês.
+	12- Objetivo: Mostrar uma tabela com relatório mensal das vendas da loja.
+
 
 #### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6) OK<br>
-    a) Criar minimo 3 de exclusão
-    b) Criar minimo 3 de atualização
+	1- Objetivo: Visualizar e atualizar o tipo de logradouro do IFES, de condomínio para avenida.
+	2- Objetivo: Visualizar e atualizar o tipo de logradouro do FUA, de avenida para condomínio.
+	3- Objetivo: Visualizar e atualizar a cidade EURICO de Vila Velha para Vitória.
+	4- Objetivo: Visualizar e excluir o produto que se repete.
+	5- Objetivo: Visualizar e excluir o produto que não foi vendido nenhuma vez.
+	6- Objetivo: Visualizar e excluir um bairro, pois ficou fora da nova zona de entrega.
+
 
 #### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6) OK<br>
-    a) Uma junção que envolva todas as tabelas possuindo no mínimo 2 registros no resultado
-    b) Outras junções que o grupo considere como sendo as de principal importância para o trabalho
+	1- Objetivo: Visualizar um relatório com todas as informações necessárias para a compra dos clientes.
+	2- Objetivo: Visualizar um relatório com todas as informações necessárias para a entrega das compras dos clientes.
+	3- Objetivo: Visualizar um relatório com que mostre as zonas que possuem mais clientes.
+	4- Objetivo: Visualizar um relatório que apresenta uma tabela com os horários de “pico”, onde a quantidade de vendas é maior.
+	5- Objetivo: Visualizar um relatório que apresenta uma tabela com os meios de pagamento mais utilizados.
+	6- Objetivo: Visualizar um relatório que apresenta uma tabela com os produtos mais comprados.
+	7- Objetivo: Visualizar um relatório que apresenta uma tabela com os entregadores e suas informações, como nome, o cpf, e salário Ordenando-os em ordem crescente. 
+
 
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
-    a) Criar minimo 2 envolvendo algum tipo de junção
+	1- Objetivo: Relatório que apresenta uma tabela onde mostra o nome do entregador que fez mais entregas e a quantidade de entregas em ordem decrescente.
+	2- Objetivo: Relatório que apresenta uma tabela onde mostra o nome da cidade e quantidade de pedidos feitos em ordem decrescente.
+	3- Objetivo: Relatório que apresenta uma tabela onde deve constar o nome do produto mais comprado e quantidade de compras feitas em ordem decrescente.
+	4- Objetivo: Relatório que apresenta uma tabela mostrando o valor total de vendas em um determinado período de tempo, onde mostra também a data(referente ao período) e o valor total das vendas.
+	5- Objetivo: Relatório que apresenta uma tabela mostrando a média das idades para ver qual público a loja está mais atingindo.
+	6- Objetivo: Relatório que apresente as pessoas que pagaram com dinheiro e com isso tem desconto de 5%.
+
 
 #### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
-    a) Criar minimo 1 de cada tipo
+	1- Objetivo: Relacionamento entre tabelas produto e compra produto.
+	2- Objetivo: Relacionamento entre as tabelas pagamento e tipo de pagamento.
+	3- Objetivo: Relacionamento entre as tabelas endereço e tabela bairro
+	4- Objetivo: Relacionamento entre forma de pagamento e tipo de pagamento.
+
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6) OK<br>
-        a) Uma junção que envolva Self Join (caso não ocorra na base justificar e substituir por uma view)
-        b) Outras junções com views que o grupo considere como sendo de relevante importância para o trabalho
+	1- Objetivo: Relatório onde mostra uma view com o salário dos entregadores.
+	2- Objetivo: Relatório onde mostra uma view com o tipo de pagamento mais utilizado.
+	3- Objetivo: Relatório onde mostra uma view com bairro ou cidade com mais vendas.
+	4- Objetivo: Relatório onde mostra uma view com os clientes que fazem aniversário neste mês.
+	5- Objetivo: Relatório onde mostra uma view dos produtos ou do produto com poucas vendas.
+	6- Objetivo: Relatório onde mostra uma view com a cidade com mais clientes.
+
 
 #### 9.10	SUBCONSULTAS (Mínimo 4) OK<br>
-     a) Criar minimo 1 envolvendo GROUP BY
-     b) Criar minimo 1 envolvendo algum tipo de junção
+	1- Objetivo: Relatório onde mostra os pedidos que foram pagos com o cartão de crédito.
+	2- Objetivo: Relatório onde mostra as compras que foram realizadas dentro do dia 11.
+	3- Objetivo: Relatório onde mostra a quantidade de condomínios que foram cadastrados.
+	4- Objetivo: Relatório onde mostra os entregadores dentro de pessoas com salário menor que 2000.
+
 
 ># MARCO DA ENTREGA 02: DO ITEM 9.2 AO ITEM 9.10<br>
 <br>
