@@ -177,7 +177,10 @@ INSERT INTO bairro(descricao)
 			('Campinho'),
 			('Planalto'),
 			('Jardim Bela Vista'),
-			('Macafé');
+			('Macafé'),
+			('Cobilândia'),
+			('Porto de Santana'),
+			('Rio Marinho');
 		
 INSERT INTO cidade(descricao)
 	values		('SERRA'),
