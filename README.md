@@ -513,7 +513,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 #### 9.7	CONSULTAS COM GROUP BY E FUNÇÕES DE AGRUPAMENTO (Mínimo 6)<br>
     a) Criar minimo 2 envolvendo algum tipo de junção
 
-#### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4) OK<br>
+#### 9.8	CONSULTAS COM LEFT, RIGHT E FULL JOIN (Mínimo 4)<br>
     a) Criar minimo 1 de cada tipo
 
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6) OK<br>
