@@ -83,7 +83,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 
 ### 7.	MODELO FÍSICO<br>
 
-	drop table if exists bairro, cidade, cliente_compra, compra, compra_pagamento, compra_produto, endereco, entregador, forma_contato, pagamento, pessoa, produto, tipo_logradouro, tipo_pagamento cascade;
+	--drop table if exists bairro, cidade, cliente_compra, compra, compra_pagamento, compra_produto, endereco, entregador, forma_contato, pagamento, pessoa, produto, tipo_logradouro, tipo_pagamento cascade;
 
 	CREATE TABLE PRODUTO (
 	    codigo serial PRIMARY KEY,
@@ -514,7 +514,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 	7- Objetivo: Cidades com a quantidade de compras maior que 3.
 	8- Objetivo: Visualizar as compras com uma data maior que 20.
  	9- Objetivo: Renomear e visualizar fk_cod_pessoa para cod entregador, a partir do momento que ele é identificado como entregador, pois proporciona melhor entendimento da tabela, ficando claro as pessoas que são clientes e entregadores.
-        10- Objetivo: Renomear e visualizar qtd para quantidade, pois proporciona melhor entendimento da tabela, ficando claro que se refere a quantidade.
+	10- Objetivo: Renomear e visualizar qtd para quantidade, pois proporciona melhor entendimento da tabela, ficando claro que se refere a quantidade.
 	11- Objetivo: Renomear e visualizar descrição para tipo de pagamento, pois proporciona melhor entendimento da tabela.
 
 
