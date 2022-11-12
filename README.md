@@ -497,7 +497,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 ># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 9.1<br>
 <br>
 
-#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4) OK<br>
+#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 4)<br>
 	1- Objetivo: Visualizar os produtos através do seu valor, dentro de uma faixa de preço específica (Entre 7 e 20 no exemplo).
 	2- Objetivo: Visualizar os entregadores através do seu salário, sendo ele superior ou inferior a algum valor específico (Valor de 2000 reais no exemplo).
 	3- Objetivo: Visualizar os produtos de acordo com a menor venda dele em relação à uma quantidade específica de vendas (5 vendas no exemplo).
@@ -518,7 +518,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 	11- Objetivo: Renomear e visualizar descrição para tipo de pagamento, pois proporciona melhor entendimento da tabela.
 
 
-#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) OK<br>
+#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE E DATAS (Mínimo 12) <br>
 	1- Objetivo: Mostrar uma tabela com todas as pessoas que começam com a letra "M".
 	2- Objetivo: Mostrar uma tabela com todos os bairros que começam com a letra "B".
 	3- Objetivo: Mostrar uma tabela com todas as cidades que começam com a letra "C".
@@ -533,7 +533,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 	12- Objetivo: Mostrar uma tabela com relatório mensal das vendas da loja.
 
 
-#### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6) OK<br>
+#### 9.5	INSTRUÇÕES APLICANDO ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6) <br>
 	1- Objetivo: Visualizar e atualizar o tipo de logradouro do IFES, de condomínio para avenida.
 	2- Objetivo: Visualizar e atualizar o tipo de logradouro do FUA, de avenida para condomínio.
 	3- Objetivo: Visualizar e atualizar a cidade EURICO de Vila Velha para Vitória.
@@ -542,7 +542,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 	6- Objetivo: Visualizar e excluir um bairro, pois ficou fora da nova zona de entrega.
 
 
-#### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6) OK<br>
+#### 9.6	CONSULTAS COM INNER JOIN E ORDER BY (Mínimo 6) <br>
 	1- Objetivo: Visualizar um relatório com todas as informações necessárias para a compra dos clientes.
 	2- Objetivo: Visualizar um relatório com todas as informações necessárias para a entrega das compras dos clientes.
 	3- Objetivo: Visualizar um relatório com que mostre as zonas que possuem mais clientes.
@@ -568,7 +568,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 	4- Objetivo: Relacionamento entre forma de pagamento e tipo de pagamento.
 
 
-#### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6) OK<br>
+#### 9.9	CONSULTAS COM SELF JOIN E VIEW (Mínimo 6)<br>
 	1- Objetivo: Relatório onde mostra uma view com o salário dos entregadores.
 	2- Objetivo: Relatório onde mostra uma view com o tipo de pagamento mais utilizado.
 	3- Objetivo: Relatório onde mostra uma view com bairro ou cidade com mais vendas.
@@ -577,7 +577,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
 	6- Objetivo: Relatório onde mostra uma view com a cidade com mais clientes.
 
 
-#### 9.10	SUBCONSULTAS (Mínimo 4) OK<br>
+#### 9.10	SUBCONSULTAS (Mínimo 4) <br>
 	1- Objetivo: Relatório onde mostra os pedidos que foram pagos com o cartão de crédito.
 	2- Objetivo: Relatório onde mostra as compras que foram realizadas dentro do dia 11.
 	3- Objetivo: Relatório onde mostra a quantidade de condomínios que foram cadastrados.
