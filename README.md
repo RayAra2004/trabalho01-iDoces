@@ -49,7 +49,7 @@ Por fim, temos o entregador realizando a entrega de várias compras e uma compra
            senha: campo que armazena a autenticação do username.
            nome: campo referente ao nome da pessoa.
            cpf: campo referente ao CPF da pessoa.
-	   		data_nascimento: campo referente a data de nascimento da pessoa.
+	   	data_nascimento: campo referente a data de nascimento da pessoa.
            forma_contato: campo multivalorado e composto que tem as formas de contato:
              celular: campo que armazena o número da pessoa.
              email: campo que armazena o email da pessoa.
