@@ -65,8 +65,18 @@ INSERT INTO FORMA_CONTATO(celular, email)
 			('99856-8854', 'valencosta@ifes.com'),
 			('99239-4104', '3218-0305', 'titinho@ifes.com'),
 			('99895-0029', '3291-5577', 'maromba2000.ifes.com'),
-			('99581-7451','3291-5577', 'gabi@ifes.com')
-			('99831-3007', '3598-3007', 'marceloluiz@ifes.com');
+			('99581-7451','3291-5577', 'gabi@ifes.com'),
+			('99831-3007', '3598-3007', 'marceloluiz@ifes.com'),
+			('99952-4243', 'wellasvezz@ifes.com'),
+			('98759-1322', '3369-8501', 'hallbru@ifes.com'),
+			('99623-1447', 'xavis@ifes.com'),
+			('99654-0203', '3251-4908', 'adolf@ifes.com'),
+			('99540-5002', '99291-5163', 'henri@ifes.com'),
+			('98523-1010', 'brunomeca@ifes.com'),
+			('3210-5678', 'mirabell@ifes.com'),
+			('96514-9076', 'gracinhama@ifes.com'),
+			('99678-2528', 'helenaxavier2@ifes.com'),
+			('96521-2975', '3698-7412', 'paulocelin@ifes.com');
 			
 INSERT INTO endereco(cep, logradouro, numero, fk_bairro_codigo, fk_cidade_codigo, fk_tipo_logradouro_codigo)
 	values  	(29162200, 'Limoeiro', 12, 1, 1, 2),
