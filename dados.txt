@@ -27,6 +27,16 @@ INSERT INTO PESSOA(username, senha, nome, cpf, data_nascimento, fk_endereco_codi
 			('brunno' 'bubu12345', 'Gabriel Brunetti', '272.272.272-27', '1994-08-03', 21, 26),
 			('gabi', 'gaga12345', 'Gabriela Guimarães', '282.282.282-28', '2001-10-12', 21, 27),
 			('celinho', 'cece12345', 'Marcelo Luiz', '292.292.292-29', '1977-01-14', 4, 28),
+			('welligton','well12345','Welligton Alvez','303.303.303-30','1979-04-13',,),
+			('halisson','hali12345','Halisson Bruno','313.313.313-31','1984-07-03',,),
+			('xavier','xav12345','Xavier Almeida','323.323.323-32','1999-05-05',,),
+			('adolfo','adol12345','Adolfo Padilha','343.343.343-34','1990-10-21',,),
+			('henrique','henri12345','Henrique Hugo','353.353.353-35','1983-09-15',,),
+			('bruno','bru12345','Bruno Macarena','363.363.363-36','1995-03-03',,),
+			('mirabel','mira12345','Mirabel da Graça','373.373.373-37','1990-04-21',,),
+			('maria','mari12345','Maria da Graça','383.383.383-38','2001-06-18',,),
+			('helena','hel12345','Helena Xavier','393.393.393-39','2003-03-28',,),
+			('paulo','pa12345','Paulo Celin','404.404.404-40','2002-08-20',,);
 
 INSERT INTO FORMA_CONTATO(celular, email)
 	values 		('98181-4344', 'moraesesther25@ifes.com'),
