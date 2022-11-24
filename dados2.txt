@@ -127,7 +127,10 @@ INSERT INTO entregador(fk_pessoa_codigo, salario)
 			(17, 2350.00),
 			(18, 1000.00),
 			(19, 4280.00),
-			(20, 1200.00);
+			(20, 1200.00),
+                        (21, 1600.00),
+(22, 1780.00),
+(23, 1400.00);
 
 INSERT INTO produto(nome, valor, descricao)
 	values		('Bolo de chocolate', 8.00, 'Bolo de chocolate belga, vendido em fatias'),
