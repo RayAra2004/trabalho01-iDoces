@@ -1,7 +1,5 @@
 INSERT INTO PESSOA(username, senha, nome, cpf, data_nascimento, fk_endereco_codigo, fk_FORMA_CONTATO_codigo)
-	values 		
-#cliente
-('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', '2000-04-25', 1, 1)
+	values		('moraesesther', 'the12345', 'Esther Moraes', '000.000.000-00', '2000-04-25', 1, 1),
 			('andradesoso', 'soso12345', 'Sofia Andrade', '111.111.111-11', '2000-01-28', 2, 2),
 			('rayara9', 'ray12345', 'Raynan Araujo', '222.222.222-22', '2004-07-09', 3, 3),
 			('caduchato', 'caca12345', 'Carlos Eduardo Barbosa', '333.333.333-33', '1998-05-02', 4, 4),
